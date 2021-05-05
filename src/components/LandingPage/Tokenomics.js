@@ -16,7 +16,7 @@ const useStyles = makeStyles((theme) => ({
     // flexDirection: "row-reverse",
     justifyContent: "space-between",
     alignItems: "center",
-    flexWrap: "wrap",
+    // flexWrap: "wrap",
     background: `linear-gradient(to bottom right,#6a00dc,
         #f8f8f8,
         #f8f8f8,

@@ -25,10 +25,18 @@ const useStyles = makeStyles((theme) => ({
   },
   itemsContainer: {
     display: "flex",
-    justifyContent: "space-between",
+    // justifyContent: "space-between",
     flexWrap: "wrap",
     width: "100%",
     marginTop: 20,
+    alignItems: "center",
+    justifyContent: "center",
+  },
+  item: {
+    marginBottom: 40,
+    maxWidth: 400,
+    marginLeft: 12,
+    marginRight: 12,
   },
   heading: {
     color: theme.palette.pbr.textSecondary,
@@ -75,37 +83,43 @@ const Feature = () => {
     <div className={classes.background}>
       <h6 className={classes.heading}>Polkawar Products</h6>
 
-
-
       <div className={classes.itemsContainer}>
-        <div style={{ marginBottom: 40, maxWidth: 400 }}>
+        <div className={classes.item}>
           <h5>
-            <SportsEsportsOutlined fontSize="large" />PolkaWar Realm
+            <SportsEsportsOutlined fontSize="large" />
+            PolkaWar Realm
           </h5>
           <p className={classes.para}>
-            The NFT-based decentralized fighting game.
-            Everyone can create or build their own characters, battle to have fun and earn more profits.
-            There will be two arenas: individual and team. There is also a mission and rewards system for each level.
+            The NFT-based decentralized fighting game. Everyone can create or
+            build their own characters, battle to have fun and earn more
+            profits. There will be two arenas: individual and team. There is
+            also a mission and rewards system for each level.
           </p>
         </div>
 
-        <div style={{ marginBottom: 40, maxWidth: 400 }}>
+        <div className={classes.item}>
           <h5>
             <TrendingUpOutlined fontSize="large" /> PolkaWar Marketplace
           </h5>
           <p className={classes.para}>
-            The NFT marketplace,  where players can buy, sell and bid equipment or weapons for their character.
-            The players can acquire funds by selling their upgraded equipment and weapons, in the native PWAR token.
+            The NFT marketplace, where players can buy, sell and bid equipment
+            or weapons for their character. The players can acquire funds by
+            selling their upgraded equipment and weapons, in the native PWAR
+            token.
           </p>
         </div>
 
-        <div style={{ marginBottom: 40, maxWidth: 400 }}>
+        <div className={classes.item}>
           <h5>
             <CardGiftcardOutlined fontSize="large" /> PolkaWar Logistics
           </h5>
           <p className={classes.para}>
-            Logistics is a solution for those who want to own NFT in the real world. Logistics will allow conversion of NFT items (equipment and weapons) to physical real-world tangible items.
-            Through the Logistics system, PolkaWar will ship the product directly to the buyer's address. This new feature promises a novel and extremely attractive function in the NFT marketplace field.
+            Logistics is a solution for those who want to own NFT in the real
+            world. Logistics will allow conversion of NFT items (equipment and
+            weapons) to physical real-world tangible items. Through the
+            Logistics system, PolkaWar will ship the product directly to the
+            buyer's address. This new feature promises a novel and extremely
+            attractive function in the NFT marketplace field.
           </p>
         </div>
       </div>

@@ -1,13 +1,4 @@
-import {
-  Avatar,
-  IconButton,
-  makeStyles,
-  Step,
-  StepContent,
-  StepLabel,
-  Stepper,
-  Typography,
-} from "@material-ui/core";
+import { Avatar, IconButton, makeStyles } from "@material-ui/core";
 import React, { useEffect, useState } from "react";
 import research from "../../assets/research.png";
 import farming from "../../assets/farming.png";
@@ -17,7 +8,7 @@ import chain from "../../assets/chain.png";
 import integration from "../../assets/integration2.png";
 import cross_chain from "../../assets/cross_chain.png";
 import features from "../../assets/features.png";
-// import { LeftOutlined, RightOutlined } from "@ant-design/icons";
+
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 

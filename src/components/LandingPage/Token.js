@@ -14,20 +14,11 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     minHeight: "100vh",
     flexDirection: "column",
-    justifyContent: "center",
     alignItems: "center",
-    flexWrap: "wrap",
     background: `linear-gradient(to bottom right,#c91f61,
         #f8f8f8,
         #f8f8f8,
         #f8f8f8)`,
-    [theme.breakpoints.down("sm")]: {
-      padding: 10,
-      paddingBottom: 35,
-      paddingTop: 60,
-      display: "flex",
-      justifyContent: "flex-start",
-    },
   },
   heading: {
     color: theme.palette.pbr.textSecondary,
@@ -38,50 +29,28 @@ const useStyles = makeStyles((theme) => ({
     wordSpacing: "0px",
     alignSelf: "center",
     paddingTop: 0,
+    [theme.breakpoints.down("md")]: {
+      // fontSize: 28,
+      marginTop: 50,
+      marginBottom: 50,
+    },
     [theme.breakpoints.down("sm")]: {
       fontSize: 28,
       marginBottom: 45,
     },
   },
-  listText: {
-    color: theme.palette.pbr.textSecondary,
-    fontSize: 24,
-    fontWeight: 400,
-    verticalAlign: "middle",
-    wordSpacing: "0px",
-    alignSelf: "center",
-    paddingTop: 0,
-    [theme.breakpoints.down("sm")]: {
-      fontSize: 22,
-      marginRight: 30,
-    },
-  },
+
   image: {
+    height: 550,
     width: 500,
-    height: 500,
-    [theme.breakpoints.down("sm")]: {
-      width: 270,
-      height: 270,
+    [theme.breakpoints.down("md")]: {
+      width: 700,
+      height: 700,
     },
-  },
-  itemsContainer: {
-    display: "flex",
-    alignItems: "center",
-    [theme.breakpoints.down("sm")]: {
-      // display: "flex",
-      flexDirection: "column",
-      //   flexWrap: "wrap",
+    [theme.breakpoints.down("xs")]: {
+      width: 350,
+      height: 350,
     },
-  },
-  listItems: {
-    [theme.breakpoints.down("sm")]: {
-      display: "flex",
-      flexWrap: "wrap",
-    },
-  },
-  listItem: {
-    marginBottom: 30,
-    listStyle: "none",
   },
 }));
 
@@ -91,10 +60,7 @@ const Token = () => {
     <div className={classes.background}>
       <h6 className={classes.heading}>Token Use Cases</h6>
 
-      <div className={classes.itemsContainer}>
-
-        <CardMedia className={classes.image} image={use_case} />
-      </div>
+      <CardMedia className={classes.image} image={use_case} />
     </div>
   );
 };
