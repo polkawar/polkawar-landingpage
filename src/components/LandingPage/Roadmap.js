@@ -112,6 +112,7 @@ const useStyles = makeStyles((theme) => ({
     verticalAlign: "middle",
     wordSpacing: "0px",
     paddingTop: 50,
+    marginBottom: 40,
 
     [theme.breakpoints.down("sm")]: {
       fontSize: 28,
@@ -129,22 +130,10 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 16,
     },
   },
-  highlight: {
-    color: theme.palette.pbr.primary,
-  },
-  baseline: {
-    display: "flex",
-    alignSelf: "center",
-    height: 5,
-    width: "100%",
-    backgroundColor: theme.palette.pbr.primary,
-    verticalAlign: "baseline",
-  },
   icon: {
     fontSize: 48,
     color: "#616161",
   },
-  details: {},
   title: {
     fontWeight: 600,
     verticalAlign: "baseline",
@@ -170,28 +159,6 @@ const useStyles = makeStyles((theme) => ({
       marginRight: 0,
     },
   },
-  stepperContainer: {
-    backgroundColor: "transparent",
-    display: "flex",
-    justifyContent: "flex-start",
-    // alignItems: "flex-start",
-    // justifyContent: "flex-start",
-  },
-  step: {
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "flex-start",
-    alignItems: "start",
-    width: 250,
-    [theme.breakpoints.down("md")]: {
-      alignItems: "center",
-    },
-  },
-  stepContent: {
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: 250,
-    },
-  },
 }));
 
 const Roadmap = () => {
@@ -213,13 +180,6 @@ const Roadmap = () => {
       : setX(0);
   };
 
-  const goRightTab = () => {
-    x === -shift * ([1, 2, 3, 4, 5, 6].length - 6) ? setX(0) : setX(x - shift);
-  };
-  const goLeftTab = () => {
-    x === shift * ([1, 2, 3, 4, 5, 6].length - 6) ? setX(x + shift) : setX(0);
-  };
-
   const goRightMob = () => {
     x === -shift * ([1, 2, 3, 4, 5].length - 1) ? setX(0) : setX(x - shift);
   };
@@ -228,95 +188,68 @@ const Roadmap = () => {
   };
 
   const handleLeftCarouselScroll = () => {
-    if (window.innerWidth < 900) {
+    if (window.innerWidth < 950) {
       goLeftMob();
-    } else if (window.innerWidth > 1050) {
-      goLeft();
     } else {
-      goLeftTab();
+      goLeft();
     }
   };
 
   const handleRightCarouselScroll = () => {
     if (window.innerWidth < 900) {
       goRightMob();
-    } else if (window.innerWidth > 1050) {
-      goRight();
     } else {
-      goRightTab();
+      goRight();
     }
   };
 
-  useEffect(() => {
-    if (window.innerWidth > 800 && window.innerWidth < 1300) {
-      handleLeftCarouselScroll();
-    }
-  }, []);
   return (
     <div className={classes.background}>
       <div>
         <h6 className={classes.heading}>
           PolkaWar RoadMap<strong className={classes.highlight}></strong>
         </h6>
-        {/* <p className={classes.para}>
-          Fundamentally strong and visionary project with strong foundation.
-        </p> */}
       </div>
 
-      <div className={classes.sliderContainer}>
-        <IconButton className="c--right" onClick={handleLeftCarouselScroll}>
-          <ArrowBackIosIcon fontSize="large" />
-        </IconButton>
+      <div className="row g-0 align-items-center ">
+        <div className="col-2 col-md-1">
+          <IconButton className="c--right" onClick={handleLeftCarouselScroll}>
+            <ArrowBackIosIcon fontSize="large" />
+          </IconButton>
+        </div>
 
-        <div className="slider">
-          <Stepper
-            nonLinear={true}
-            activeStep={steps.length}
-            alternativeLabel
-            className={classes.stepperContainer}
-          >
+        <div className="col-8 col-md-10">
+          <div className="slider">
             {steps.map((stepData, index) => (
-              <Step
-                completed={stepData.completed}
-                key={stepData.id}
-                active={true}
-                className={["slide", classes.step].join(" ")}
+              <div
+                key={index}
+                className="slide"
                 style={{
                   transform: `translateX(${x}%)`,
                 }}
               >
-                <StepLabel
-                  icon={<Avatar src={stepData.icon} variant="rounded" />}
-                >
-                  <h3>{stepData.title}</h3>
-                </StepLabel>
-
-                <StepContent className={classes.stepContent}>
-                  <h5
-                    style={{
-                      fontSize: 14,
-                      // fontWeight: 550,
-                      // marginBottom: 12,
-                    }}
-                  >
-                    {stepData.heading}
-                  </h5>
-                  <ul>
+                <div style={{ display: "flex", flexDirection: "column" }}>
+                  <Avatar src={stepData.icon} variant="rounded" />
+                  <hr style={{ width: "95%", marginTop: 1, marginBottom: 3 }} />
+                  <h3 style={{}}>{stepData.title}</h3>
+                  <h5 style={{ fontSize: 14 }}>{stepData.heading}</h5>
+                  <ul style={{ borderLeft: "1px solid   gray	" }}>
                     {stepData.subheadings.map((subheading) => (
                       <li style={{ marginRight: -5 }}>
                         <p style={{ fontSize: 14 }}>{subheading}</p>
                       </li>
                     ))}
                   </ul>
-                </StepContent>
-              </Step>
+                </div>
+              </div>
             ))}
-          </Stepper>
+          </div>
         </div>
-
-        <IconButton className="c--right" onClick={handleRightCarouselScroll}>
-          <ArrowForwardIosIcon fontSize="large" />
-        </IconButton>
+        <div className="col-2 col-md-1">
+          <IconButton className="c--right" onClick={handleRightCarouselScroll}>
+            <ArrowForwardIosIcon fontSize="large" />
+          </IconButton>
+        </div>
       </div>
     </div>
   );

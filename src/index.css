@@ -46,7 +46,7 @@ p {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
   overflow: hidden;
 }
 .slide {
