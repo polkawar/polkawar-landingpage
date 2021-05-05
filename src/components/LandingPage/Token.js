@@ -89,31 +89,10 @@ const Token = () => {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <h6 className={classes.heading}>PWAR Token</h6>
+      <h6 className={classes.heading}>Token Use Cases</h6>
 
       <div className={classes.itemsContainer}>
-        <ul className={classes.listItems}>
-          <li className={classes.listItem}>
-            <h5 className={classes.listText}>
-              <LocalFloristOutlined /> Farming
-            </h5>
-          </li>
-          <li className={classes.listItem}>
-            <h5 className={classes.listText}>
-              <AccountBalanceOutlined /> Governance
-            </h5>
-          </li>
-          <li className={classes.listItem}>
-            <h5 className={classes.listText}>
-              <LocalAtmIcon /> Lending fee
-            </h5>
-          </li>
-          <li className={classes.listItem}>
-            <h5 className={classes.listText}>
-              <SendOutlined /> Launchpad
-            </h5>
-          </li>
-        </ul>
+
         <CardMedia className={classes.image} image={use_case} />
       </div>
     </div>
