@@ -8,7 +8,7 @@ import {
   Stepper,
   Typography,
 } from "@material-ui/core";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import research from "../../assets/research.png";
 import farming from "../../assets/farming.png";
 import launch from "../../assets/launch.png";
@@ -91,8 +91,8 @@ const useStyles = makeStyles((theme) => ({
   background: {
     padding: 20,
     height: "100vh",
-    [theme.breakpoints.down("md")]: {
-      height: "60vh",
+    [theme.breakpoints.between("lg")]: {
+      height: "80vh",
       padding: 0,
       paddingBottom: 15,
       paddingTop: 50,
@@ -183,6 +183,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-start",
     alignItems: "start",
     width: 250,
+    [theme.breakpoints.down("md")]: {
+      alignItems: "center",
+    },
   },
   stepContent: {
     [theme.breakpoints.down("sm")]: {
@@ -205,16 +208,16 @@ const Roadmap = () => {
       : setX(x - shift);
   };
   const goLeft = () => {
-    x === shift * ([1, 2, 3, 4, 5, 6, 7, 8, 9].length - 8)
+    x === shift * ([1, 2, 3, 4, 5, 6, 7, 8, 9].length - 9)
       ? setX(x + shift)
       : setX(0);
   };
 
   const goRightTab = () => {
-    x === -shift * ([1, 2, 3, 4, 5, 6].length - 4) ? setX(0) : setX(x - shift);
+    x === -shift * ([1, 2, 3, 4, 5, 6].length - 6) ? setX(0) : setX(x - shift);
   };
   const goLeftTab = () => {
-    x === shift * ([1, 2, 3, 4, 5, 6].length - 4) ? setX(x + shift) : setX(0);
+    x === shift * ([1, 2, 3, 4, 5, 6].length - 6) ? setX(x + shift) : setX(0);
   };
 
   const goRightMob = () => {
@@ -244,6 +247,11 @@ const Roadmap = () => {
     }
   };
 
+  useEffect(() => {
+    if (window.innerWidth > 800 && window.innerWidth < 1300) {
+      handleLeftCarouselScroll();
+    }
+  }, []);
   return (
     <div className={classes.background}>
       <div>

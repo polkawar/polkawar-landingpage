@@ -48,15 +48,19 @@ const useStyles = makeStyles((theme) => ({
   },
 
   image: {
-    width: "80%",
-    height: 600,
+    width: 1000,
+    height: 500,
     [theme.breakpoints.down("md")]: {
-      width: "100%",
+      width: 800,
       height: 450,
     },
     [theme.breakpoints.down("sm")]: {
-      width: "100%",
-      height: 230,
+      width: 600,
+      height: 350,
+    },
+    [theme.breakpoints.down("xs")]: {
+      width: 400,
+      height: 220,
     },
   },
 }));

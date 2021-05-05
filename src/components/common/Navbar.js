@@ -200,6 +200,7 @@ const Navbar = () => {
                 backgroundColor: "#c91f61",
                 color: "#f8f8f8",
                 borderRadius: 25,
+                borderColor: "#c91f61",
               }}
               variant="outlined"
               href="https://polkawar.com/docs/whitepaper.pdf"
@@ -329,8 +330,8 @@ const Navbar = () => {
                 height: 35,
                 marginBottom: 2,
                 marginLeft: 20,
+                padding: 15,
               }}
-              variant="outlined"
               color="#021f47"
               href="https://polkawar.com/docs/whitepaper.pdf"
               startIcon={<DescriptionOutlined />}
