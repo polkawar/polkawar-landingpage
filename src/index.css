@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Annie+Use+Your+Telescope&family=Fredoka+One&family=New+Rocker&family=PT+Sans+Narrow&family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alice&family=Annie+Use+Your+Telescope&family=Fredoka+One&family=New+Rocker&family=PT+Sans+Narrow&family=Patrick+Hand&family=Press+Start+2P&display=swap");
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+/* @font-face {
+  font-family: "Polkawar";
+  src: local("Polkawar"), url("./fonts/Joystick-5KjV.ttf") format("ttf");
+  /* other formats include: 'woff2', 'truetype, 'opentype',
+                            'embedded-opentype', and 'svg' */
+/* }  */
+
+a {
+  text-decoration: none;
+  color: #021f47;
+}
+
+h6 {
+  font-family: "New Rocker", cursive;
+}
+h5 {
+  font-family: "New Rocker", cursive;
+}
+
+p {
+  font-family: "Patrick Hand", cursive;
+  font-size: 18px;
+  /* font-weight: 100; */
+}
+.slider {
+  width: 100%;
+  height: 100%;
+  border-radius: 21px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  overflow: hidden;
+}
+.slide {
+  position: relative;
+  min-width: 20%;
+  height: 100%;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 950px) {
+  .slide {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    overflow: hidden;
+  }
+}
+.c--right {
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  background: none;
+  border: 0;
+}
+
+.header-section {
+  /* display: flex; */
+
+  /* width: "100%"; */
+  /* height: 100vh; */
+  color: #f8f8f8;
+  background: url("./assets/feature.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.footer-section {
+  background-image: linear-gradient(
+    to bottom right,
+    #f8f8f8,
+    #f8f8f8,
+    #f8f8f8,
+    #c91f61
+  );
+}
+
+.appbar-section {
+  /* padding-left: 100px;
+  padding-right: 100px; */
+  color: #021f47;
+  background-image: linear-gradient(to bottom, #f8f8f8, #6a00dc);
+}
