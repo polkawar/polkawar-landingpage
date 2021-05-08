@@ -107,6 +107,7 @@ const Footer = () => {
                 </a>
               </Tooltip>
             </div>
+
             <div className={classes.iconWrapper}>
               <Tooltip title="Email">
                 <a href="mailto:hello@polkawar.com">
