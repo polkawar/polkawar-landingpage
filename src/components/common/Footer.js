@@ -65,7 +65,7 @@ const Footer = () => {
           <div className="d-flex justify-content-center mt-4">
             <div className={classes.iconWrapper}>
               <Tooltip title="Twitter" aria-label="add1">
-                <a href="">
+                <a href="https://twitter.com/polkawarnft">
                   <IconButton aria-label="Twitter">
                     <Twitter className={classes.icon} />
                   </IconButton>
@@ -74,7 +74,7 @@ const Footer = () => {
             </div>
             <div className={classes.iconWrapper}>
               <Tooltip title="Telegram">
-                <a href="">
+                <a href="https://t.me/polkawarchat">
                   <IconButton aria-label="Telegram">
                     <Telegram className={classes.icon} />
                   </IconButton>
@@ -94,7 +94,7 @@ const Footer = () => {
 
             <div className={classes.iconWrapper}>
               <Tooltip title="Discord">
-                <a href="">
+                <a href="https://discord.gg/NQFjXkMqgk">
                   <IconButton aria-label="Discord">
                     <img
                       src="assets/discord.png"
