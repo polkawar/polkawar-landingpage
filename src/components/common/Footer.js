@@ -98,15 +98,31 @@ const Footer = () => {
                   <IconButton aria-label="Discord">
                     <img
                       src="assets/discord.png"
-                      height="25px"
-                      width="25px"
-                      style={{ opacity: 0.6, marginTop: 5 }}
+                      height="30px"
+                      width="30px"
+                      style={{ opacity: 0.75, marginTop: 2 }}
                       alt="discord"
                     />
                   </IconButton>
                 </a>
               </Tooltip>
             </div>``
+
+            <div className={classes.iconWrapper}>
+              <Tooltip title="Medium">
+                <a href="https://medium.com/@polkawar">
+                  <IconButton aria-label="Discord">
+                    <img
+                      src="assets/medium.png"
+                      height="30px"
+                      width="30px"
+                      style={{ opacity: 0.75, marginTop: 2 }}
+                      alt="medium"
+                    />
+                  </IconButton>
+                </a>
+              </Tooltip>
+            </div>
 
             <div className={classes.iconWrapper}>
               <Tooltip title="Email">

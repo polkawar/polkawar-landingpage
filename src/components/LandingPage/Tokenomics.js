@@ -3,11 +3,6 @@ import makeStyles from "@material-ui/core/styles/makeStyles";
 import React from "react";
 import tokenomics_back from "../../assets/tokenomics_back.png";
 
-import AccountBalanceOutlined from "@material-ui/icons/AccountBalanceOutlined";
-import LocalFloristOutlined from "@material-ui/icons/LocalFloristOutlined";
-import SendOutlined from "@material-ui/icons/SendOutlined";
-import LocalAtmIcon from "@material-ui/icons/LocalAtm";
-
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
