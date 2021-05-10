@@ -227,7 +227,7 @@ const Navbar = () => {
             activeClass="active"
             to="header-section"
             smooth={true}
-            offset={0}
+            offset={-60}
             duration={400}
             delay={0}
             className={classes.home}

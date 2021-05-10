@@ -77,16 +77,11 @@ p {
 }
 
 .header-section {
-  /* display: flex; */
-
-  /* width: "100%"; */
-  /* height: 100vh; */
   color: #f8f8f8;
-  background: url("./assets/feature.jpg");
-  background-repeat: no-repeat;
+  background: url("./assets/feature.jpg") no-repeat;
   background-size: cover;
-  padding-left: 100px;
-  padding-right: 100px;
+  /* padding-left: 100px;
+  padding-right: 100px; */
 }
 
 .footer-section {
