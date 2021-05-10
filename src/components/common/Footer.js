@@ -106,7 +106,7 @@ const Footer = () => {
                   </IconButton>
                 </a>
               </Tooltip>
-            </div>``
+            </div>
 
             <div className={classes.iconWrapper}>
               <Tooltip title="Medium">
