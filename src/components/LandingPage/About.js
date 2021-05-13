@@ -1,7 +1,7 @@
 import CardMedia from "@material-ui/core/CardMedia";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import React from "react";
-import war3 from "../../assets/polkawarmvp.png";
+import war3 from "../../assets/pwr.png";
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -11,6 +11,7 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-around",
+    flexWrap: "wrap",
     background: `linear-gradient(to bottom right,#c91f61,
       #f8f8f8,
       #f8f8f8,
@@ -19,26 +20,37 @@ const useStyles = makeStyles((theme) => ({
       padding: 10,
       // paddingBottom: 35,
       // paddingTop: 35,
-      display: "flex",
       flexDirection: "column",
-      justifyContent: "space-evenly",
+      justifyContent: "center",
+      alignItems: "center",
+      marginBottom: 20,
+    },
+    [theme.breakpoints.down("xs")]: {
+      padding: 10,
+      // paddingBottom: 35,
+      // paddingTop: 35,
+      justifyContent: "center",
+      alignItems: "start",
       marginBottom: 20,
     },
   },
   image: {
-    width: 500,
-    height: 500,
-    boxShadow: "0 0 4px #c91f61",
-    [theme.breakpoints.between("sm", "md")]: {
+    width: 600,
+    height: 400,
+    // boxShadow: "0 0 4px #c91f61",
+    marginTop: 50,
+    marginBottom: 10,
+    [theme.breakpoints.down("md")]: {
       // width: 500,
       // height: 500,
-      // marginTop: 30,
+      marginTop: 50,
       marginBottom: 30,
     },
-    [theme.breakpoints.down("sm")]: {
-      width: 250,
-      height: 250,
-      marginTop: 30,
+    [theme.breakpoints.down("xs")]: {
+      width: 350,
+      height: 225,
+      marginTop: 60,
+      marginBottom: 20,
     },
   },
   textContainer: {
@@ -48,7 +60,11 @@ const useStyles = makeStyles((theme) => ({
     // alignItems: "center",
     maxWidth: 650,
     margin: 0,
-    [theme.breakpoints.down("sm")]: {
+    marginTop: 10,
+    marginBottom: 10,
+    marginLeft: 5,
+    marginRight: 5,
+    [theme.breakpoints.down("md")]: {
       marginTop: 35,
     },
   },

@@ -6,26 +6,33 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    // paddingLeft: 100,
     height: "100vh",
-    // paddingTop: 250,
     color: "white",
-    // marginTop: 60,
-    paddingTop: 220,
     marginTop: 60,
     textShadow: "3px 4px black",
+    [theme.breakpoints.down("xs")]: {
+      marginTop: 0,
+    },
   },
   heading: {
-    textAlign: "left",
+    textAlign: "center",
     fontSize: 44,
     fontWeight: 600,
     verticalAlign: "middle",
     wordSpacing: "0px",
     fontFamily: "'New Rocker', cursive",
     marginTop: 30,
+    paddingTop: 250,
+    [theme.breakpoints.down("md")]: {
+      marginTop: 180,
+    },
     [theme.breakpoints.down("sm")]: {
       fontSize: 36,
       marginTop: 10,
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 30,
+      marginTop: 0,
     },
   },
 }));

@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme) => ({
     minHeight: "100vh",
     display: "flex",
     // flexDirection: "row-reverse",
-    justifyContent: "space-between",
+    justifyContent: "space-around",
     alignItems: "center",
     // flexWrap: "wrap",
     background: `linear-gradient(to bottom right,#6a00dc,
