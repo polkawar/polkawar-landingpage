@@ -63,7 +63,7 @@ const getStepsData = () => {
         "Equipment system",
         "PolkaWar marketplace mainnet",
         "PolkaWar Realm mainnet",
-        "Launch Game on Casper Blockchain Testnet"
+        "Launch Game on Casper Blockchain Testnet",
       ],
       completed: false,
       icon: launch,
@@ -72,7 +72,12 @@ const getStepsData = () => {
       id: "5",
       title: "Q1 - Q2, 2022",
       heading: "PolkaWar Logictic & Multichain",
-      subheadings: ["NFT Renting", "PolkaWar Logictics", "Multichain Marketplace (Support Binance Smart Chain, PolkaDot, Casper)", "Launch Game on Casper Blockchain Mainnet"],
+      subheadings: [
+        "NFT Renting",
+        "PolkaWar Logictics",
+        "Multichain Marketplace (Support Binance Smart Chain, PolkaDot, Casper)",
+        "Launch Game on Casper Blockchain Mainnet",
+      ],
       completed: false,
       icon: chain,
     },
@@ -194,6 +199,12 @@ const Roadmap = () => {
       goRight();
     }
   };
+
+  useEffect(() => {
+    if (window.innerWidth < 950) {
+      handleRightCarouselScroll();
+    }
+  }, []);
 
   return (
     <div className={classes.background}>
