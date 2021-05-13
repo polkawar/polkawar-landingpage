@@ -1,4 +1,3 @@
-import CardMedia from "@material-ui/core/CardMedia";
 import makeStyles from "@material-ui/core/styles/makeStyles";
 import React from "react";
 import war3 from "../../assets/pwr.png";
@@ -7,19 +6,15 @@ const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
     minHeight: "100vh",
-    // height: "100%",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-around",
-    flexWrap: "wrap",
     background: `linear-gradient(to bottom right,#c91f61,
       #f8f8f8,
       #f8f8f8,
       #f8f8f8)`,
     [theme.breakpoints.down("md")]: {
       padding: 10,
-      // paddingBottom: 35,
-      // paddingTop: 35,
       flexDirection: "column",
       justifyContent: "center",
       alignItems: "center",
@@ -27,28 +22,25 @@ const useStyles = makeStyles((theme) => ({
     },
     [theme.breakpoints.down("xs")]: {
       padding: 10,
-      // paddingBottom: 35,
-      // paddingTop: 35,
       justifyContent: "center",
-      alignItems: "start",
+      alignItems: "center",
       marginBottom: 20,
     },
   },
   image: {
     width: 600,
-    height: 400,
-    // boxShadow: "0 0 4px #c91f61",
+    height: "auto",
     marginTop: 50,
     marginBottom: 10,
     [theme.breakpoints.down("md")]: {
-      // width: 500,
-      // height: 500,
+      width: "70%",
+      height: "auto",
       marginTop: 50,
       marginBottom: 30,
     },
     [theme.breakpoints.down("xs")]: {
-      width: 350,
-      height: 225,
+      width: "90%",
+      height: "auto",
       marginTop: 60,
       marginBottom: 20,
     },
@@ -56,8 +48,6 @@ const useStyles = makeStyles((theme) => ({
   textContainer: {
     display: "flex",
     flexDirection: "column",
-    // justifyContent: "center",
-    // alignItems: "center",
     maxWidth: 650,
     margin: 0,
     marginTop: 10,
@@ -65,11 +55,19 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 5,
     marginRight: 5,
     [theme.breakpoints.down("md")]: {
+      maxWidth: "60%",
+      marginTop: 35,
+    },
+    [theme.breakpoints.down("sm")]: {
+      maxWidth: "70%",
+      marginTop: 35,
+    },
+    [theme.breakpoints.down("xs")]: {
+      maxWidth: "90%",
       marginTop: 35,
     },
   },
   subHeading: {
-    // fontFamily: "'New Rocker', cursive",
     [theme.breakpoints.down("sm")]: {
       fontSize: 28,
       marginTop: 10,
@@ -95,7 +93,7 @@ const About = () => {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <CardMedia className={classes.image} image={war3} />
+      <img src={war3} className={classes.image} />
 
       <div className={classes.textContainer}>
         <h5 className={classes.subHeading}>
