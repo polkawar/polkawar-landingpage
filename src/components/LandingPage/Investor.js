@@ -7,8 +7,17 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    [theme.breakpoints.down("sm")]: {
+    paddingTop:80,
+    paddingBottom:80,
+    [theme.breakpoints.down("md")]: {
       paddingBottom: 35,
+      paddingTop:100,
+      paddingBottom:50
+    },
+    [theme.breakpoints.down("xs")]: {
+      paddingBottom: 35,
+      paddingTop:50,
+      paddingBottom:50
     },
   },
 

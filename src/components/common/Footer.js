@@ -7,10 +7,11 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 150,
     height: "400px",
     [theme.breakpoints.down("sm")]: {
-      height: "100%",
-      padding: 0,
+      padding: 5,
       paddingTop: 0,
       paddingBottom: 25,
+      paddingLeft:20,
+      paddingRight:20,
     },
   },
   heading: {
@@ -45,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
     color: "#414141",
   },
   iconWrapper: {
-    marginRight: 5,
+    marginRight: '0.8%',
   },
 }));
 

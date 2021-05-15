@@ -6,7 +6,7 @@ import tokenomics_back from "../../assets/tokenomics_back.png";
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
-    minHeight: "100vh",
+    height: "100%",
     display: "flex",
     // flexDirection: "row-reverse",
     justifyContent: "space-around",

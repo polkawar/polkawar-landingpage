@@ -8,7 +8,7 @@ import archers from "../../assets/archer.png";
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
-    minHeight: "100vh",
+    height: "100%",
     display: "flex",
     flexDirection: "column",
     background: `linear-gradient(to bottom right,#6a00dc,

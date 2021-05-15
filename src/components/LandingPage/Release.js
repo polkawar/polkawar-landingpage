@@ -5,7 +5,7 @@ import release from "../../assets/release_schedule.png";
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
-    minHeight: "100vh",
+    height: "100%",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -14,10 +14,6 @@ const useStyles = makeStyles((theme) => ({
       #f8f8f8,
       #f8f8f8,
       #f8f8f8)`,
-
-    [theme.breakpoints.down("md")]: {
-      minHeight: "80vh",
-    },
     [theme.breakpoints.down("sm")]: {
       padding: 10,
       paddingBottom: 35,
@@ -48,19 +44,19 @@ const useStyles = makeStyles((theme) => ({
   },
 
   image: {
-    width: 1000,
-    height: 500,
+    width: "80%",
+    height: 'auto',
     [theme.breakpoints.down("md")]: {
-      width: 800,
-      height: 450,
+      width: "95%",
+      height: 'auto',
     },
     [theme.breakpoints.down("sm")]: {
-      width: 600,
-      height: 350,
+      width: "98%",
+      height: 'auto',
     },
     [theme.breakpoints.down("xs")]: {
-      width: 400,
-      height: 220,
+      width: '98%',
+      height: 'auto',
     },
   },
 }));
@@ -70,7 +66,7 @@ const Release = () => {
   return (
     <div className={classes.background}>
       <h6 className={classes.heading}>Token release schedule</h6>
-      <CardMedia className={classes.image} image={release} />
+      <img  className={classes.image} src={release}  alt="release schedule"/>
     </div>
   );
 };

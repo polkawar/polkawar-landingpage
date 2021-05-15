@@ -20,7 +20,7 @@ import monut from "../../assets/mount.jpg";
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
-    minHeight: "100vh",
+    height: "100%",
     display: "flex",
     flexDirection: "column",
     background: `linear-gradient(to bottom right,#c91f61,

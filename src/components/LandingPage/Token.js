@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
     display: "flex",
-    minHeight: "100vh",
+    height: "100%",
     flexDirection: "column",
     alignItems: "center",
     background: `linear-gradient(to bottom right,#c91f61,

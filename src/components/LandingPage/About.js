@@ -4,8 +4,9 @@ import war3 from "../../assets/pwr.png";
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 80,
-    minHeight: "100vh",
+    paddingTop:150,
+    paddingBottom:150,
+    height: "100%",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-around",
@@ -13,15 +14,9 @@ const useStyles = makeStyles((theme) => ({
       #f8f8f8,
       #f8f8f8,
       #f8f8f8)`,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("sm")]: {
       padding: 10,
       flexDirection: "column",
-      justifyContent: "center",
-      alignItems: "center",
-      marginBottom: 20,
-    },
-    [theme.breakpoints.down("xs")]: {
-      padding: 10,
       justifyContent: "center",
       alignItems: "center",
       marginBottom: 20,
@@ -33,7 +28,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 50,
     marginBottom: 10,
     [theme.breakpoints.down("md")]: {
-      width: "70%",
+      width: 550,
       height: "auto",
       marginTop: 50,
       marginBottom: 30,
@@ -55,7 +50,7 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 5,
     marginRight: 5,
     [theme.breakpoints.down("md")]: {
-      maxWidth: "60%",
+      maxWidth: "70%",
       marginTop: 35,
     },
     [theme.breakpoints.down("sm")]: {

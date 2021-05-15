@@ -87,15 +87,13 @@ const getStepsData = () => {
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 20,
-    height: "100vh",
+    height: "100%",
     [theme.breakpoints.between("lg")]: {
-      height: "80vh",
       padding: 0,
       paddingBottom: 15,
       paddingTop: 50,
     },
     [theme.breakpoints.down("sm")]: {
-      height: "100vh",
       padding: 0,
       paddingBottom: 15,
       paddingTop: 60,
