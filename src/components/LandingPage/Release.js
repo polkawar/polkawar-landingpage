@@ -18,15 +18,11 @@ const useStyles = makeStyles((theme) => ({
       padding: 10,
       paddingBottom: 35,
       paddingTop: 60,
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
       minHeight: "80vh",
     },
   },
   heading: {
     color: theme.palette.pbr.textSecondary,
-    // textAlign: "left",
     fontSize: 36,
     fontWeight: 600,
     verticalAlign: "middle",
@@ -44,20 +40,12 @@ const useStyles = makeStyles((theme) => ({
   },
 
   image: {
-    width: "80%",
+    width: 950,
     height: 'auto',
     [theme.breakpoints.down("md")]: {
       width: "95%",
       height: 'auto',
-    },
-    [theme.breakpoints.down("sm")]: {
-      width: "98%",
-      height: 'auto',
-    },
-    [theme.breakpoints.down("xs")]: {
-      width: '98%',
-      height: 'auto',
-    },
+    }
   },
 }));
 

@@ -1,5 +1,4 @@
 import makeStyles from "@material-ui/core/styles/makeStyles";
-import CardMedia from "@material-ui/core/CardMedia";
 import React from "react";
 import warrior from "../../assets/warrior.png";
 import magician from "../../assets/magician.png";
@@ -11,6 +10,8 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     display: "flex",
     flexDirection: "column",
+    passingLeft:50,
+    paddingRight:50,
     background: `linear-gradient(to bottom right,#6a00dc,
       #f8f8f8,
       #f8f8f8,
@@ -25,18 +26,18 @@ const useStyles = makeStyles((theme) => ({
   },
   image: {
     width: 300,
-    height: 300,
+    height: 'auto',
     boxShadow: "0 0 4px #C91F61",
     marginBottom: 40,
     [theme.breakpoints.down("md")]: {
       width: 350,
-      height: 350,
+      height: 'auto',
       marginTop: 5,
       marginBottom: 10,
     },
     [theme.breakpoints.down("sm")]: {
-      width: 300,
-      height: 300,
+      width: 280,
+      height: 'auto',
     },
   },
   itemsContainer: {
@@ -59,9 +60,6 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 2,
     [theme.breakpoints.down("md")]: {
       maxWidth: 350,
-    },
-    [theme.breakpoints.down("sm")]: {
-      maxWidth: 300,
     },
   },
   heading: {
@@ -102,7 +100,7 @@ const Characters = () => {
       <h6 className={classes.heading}>Game Characters</h6>
       <div className={classes.itemsContainer}>
         <div className={classes.itemContainer}>
-          <CardMedia className={classes.image} image={warrior} />
+          <img className={classes.image} src={warrior} />
           <h5>Warrior</h5>
           <p className={classes.para}>
             <ul>
@@ -118,7 +116,7 @@ const Characters = () => {
         </div>
 
         <div className={classes.itemContainer}>
-          <CardMedia className={classes.image} image={magician} />
+          <img className={classes.image} src={magician} />
           <h5>Magician</h5>
           <p className={classes.para}>
             <ul>
@@ -134,7 +132,7 @@ const Characters = () => {
         </div>
 
         <div className={classes.itemContainer}>
-          <CardMedia className={classes.image} image={archers} />
+          <img className={classes.image} src={archers} />
           <h5>Archer</h5>
           <p className={classes.para}>
             <ul>

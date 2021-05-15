@@ -23,6 +23,8 @@ const useStyles = makeStyles((theme) => ({
     height: "100%",
     display: "flex",
     flexDirection: "column",
+    paddingLeft:50,
+    paddingRight:50,
     background: `linear-gradient(to bottom right,#c91f61,
       #f8f8f8,
       #f8f8f8,

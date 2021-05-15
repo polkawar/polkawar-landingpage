@@ -8,15 +8,17 @@ const useStyles = makeStyles((theme) => ({
     padding: 80,
     height: "100%",
     display: "flex",
-    // flexDirection: "row-reverse",
     justifyContent: "space-around",
     alignItems: "center",
-    // flexWrap: "wrap",
+    paddingLeft:50,
+    paddingRight:50,
     background: `linear-gradient(to bottom right,#6a00dc,
         #f8f8f8,
         #f8f8f8,
         #f8f8f8)`,
     [theme.breakpoints.down("md")]: {
+      paddingLeft:10,
+      paddingRight:10,
       padding: 10,
       paddingBottom: 35,
       paddingTop: 60,
@@ -27,12 +29,10 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     color: theme.palette.pbr.textSecondary,
-    // textAlign: "left",
     fontSize: 36,
     fontWeight: 600,
     verticalAlign: "middle",
     wordSpacing: "0px",
-    // alignSelf: "center",
     paddingTop: 0,
     marginBottom: 40,
     [theme.breakpoints.down("sm")]: {
@@ -44,12 +44,9 @@ const useStyles = makeStyles((theme) => ({
   textContainer: {
     display: "flex",
     flexDirection: "column",
-    // justifyContent: "start",
-    // alignItems: "center",
     marginRight: 60,
     [theme.breakpoints.down("sm")]: {
       marginRight: 0,
-      // alignItems: "center",
     },
   },
   listText: {
@@ -62,18 +59,14 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 0,
     [theme.breakpoints.down("sm")]: {
       fontSize: 22,
-      // marginRight: 30,
     },
   },
   image: {
     width: 830,
-    height: 500,
-    [theme.breakpoints.down("md")]: {
-      marginTop: 50,
-    },
+    height: 'auto',
     [theme.breakpoints.down("sm")]: {
-      width: 380,
-      height: 230,
+      width: '100%',
+      height: 'auto',
       marginTop: 10,
     },
   },
@@ -81,20 +74,14 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     [theme.breakpoints.down("sm")]: {
-      // display: "flex",
       flexDirection: "column",
-      //   flexWrap: "wrap",
     },
   },
   listItems: {
-    // [theme.breakpoints.down("sm")]: {
-    //   display: "flex",
-    //   flexWrap: "wrap",
-    // },
+
   },
   listItem: {
     marginBottom: 10,
-    // listStyle: "none",
   },
 }));
 
@@ -102,7 +89,7 @@ const Tokenomics = () => {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <CardMedia className={classes.image} image={tokenomics_back} />
+      <img className={classes.image} src={tokenomics_back} />
 
       <div className={classes.textContainer}>
         <h6 className={classes.heading}>Tokenomics & Locking</h6>

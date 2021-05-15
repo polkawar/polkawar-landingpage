@@ -5,9 +5,6 @@ import farming from "../../assets/farming.png";
 import launch from "../../assets/launch.png";
 import tokenomics from "../../assets/tokenomics.png";
 import chain from "../../assets/chain.png";
-import integration from "../../assets/integration2.png";
-import cross_chain from "../../assets/cross_chain.png";
-import features from "../../assets/features.png";
 
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
@@ -88,12 +85,9 @@ const useStyles = makeStyles((theme) => ({
   background: {
     padding: 20,
     height: "100%",
-    [theme.breakpoints.between("lg")]: {
-      padding: 0,
-      paddingBottom: 15,
-      paddingTop: 50,
-    },
-    [theme.breakpoints.down("sm")]: {
+    paddingLeft:100,
+    [theme.breakpoints.down("md")]: {
+      paddingLeft:15,
       padding: 0,
       paddingBottom: 15,
       paddingTop: 60,
@@ -114,9 +108,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   para: {
-    // fontWeight: 400,
     verticalAlign: "baseline",
-    // letterSpacing: "-0.8px",
     margin: 0,
     paddingTop: 10,
     paddingBottom: 10,

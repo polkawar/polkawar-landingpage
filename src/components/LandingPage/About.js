@@ -10,6 +10,8 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     alignItems: "center",
     justifyContent: "space-around",
+    paddingLeft:50,
+    paddingRight:50,
     background: `linear-gradient(to bottom right,#c91f61,
       #f8f8f8,
       #f8f8f8,
@@ -23,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   image: {
-    width: 600,
+    width: 700,
     height: "auto",
     marginTop: 50,
     marginBottom: 10,
