@@ -33,7 +33,7 @@ const getStepsData = () => {
         "Whitepaper & website",
         "MVP",
         "NFT Airdrop campaign",
-        "Public sale & listing on Uniswap",
+        "Public sale & listing on PancakeSwap",
         "Staking & Farming",
       ],
       completed: true,
@@ -72,7 +72,7 @@ const getStepsData = () => {
       subheadings: [
         "NFT Renting",
         "PolkaWar Logictics",
-        "Multichain Marketplace (Support Binance Smart Chain, PolkaDot, Casper)",
+        "Multichain Marketplace (Support PolkaDot,Solona,Matic, Casper)",
         "Launch Game on Casper Blockchain Mainnet",
       ],
       completed: false,
@@ -85,9 +85,9 @@ const useStyles = makeStyles((theme) => ({
   background: {
     padding: 20,
     height: "100%",
-    paddingLeft:100,
+    paddingLeft: 100,
     [theme.breakpoints.down("md")]: {
-      paddingLeft:15,
+      paddingLeft: 15,
       padding: 0,
       paddingBottom: 15,
       paddingTop: 60,
