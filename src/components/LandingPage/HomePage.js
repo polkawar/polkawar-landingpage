@@ -4,6 +4,7 @@ import React from "react";
 const useStyles = makeStyles((theme) => ({
   background: {
     display: "flex",
+    flexDirection:'column',
     justifyContent: "center",
     alignItems: "center",
     minHeight: "100vh",
@@ -21,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     verticalAlign: "middle",
     wordSpacing: "0px",
     fontFamily: "'New Rocker', cursive",
-    marginTop: 30,
+    // marginTop: 30,
     paddingTop: 250,
     [theme.breakpoints.down("md")]: {
       marginTop: 180,
@@ -35,6 +36,26 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 0,
     },
   },
+  subheading: {
+    textAlign: "center",
+    fontSize: 24,
+    fontWeight: 600,
+    verticalAlign: "middle",
+    wordSpacing: "0px",
+    marginTop: 20,
+    color:'#F0B90B',
+    [theme.breakpoints.down("md")]: {
+      marginTop: 20,
+    },
+    [theme.breakpoints.down("sm")]: {
+      fontSize: 22,
+      marginTop: 10,
+    },
+    [theme.breakpoints.down("xs")]: {
+      fontSize: 18,
+      marginTop: 0,
+    },
+  },
 }));
 
 const HomePage = () => {
@@ -44,6 +65,9 @@ const HomePage = () => {
       <div className={classes.background}>
         <Typography variant="h3" className={classes.heading}>
           Innovative DeFi and NFT Gaming Platform
+        </Typography>
+        <Typography variant="h3" className={classes.subheading}>
+          On Binance Smart Chain
         </Typography>
       </div>
     </>
