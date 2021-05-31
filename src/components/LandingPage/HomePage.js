@@ -4,7 +4,7 @@ import React from "react";
 const useStyles = makeStyles((theme) => ({
   background: {
     display: "flex",
-    flexDirection:'column',
+    flexDirection: 'column',
     justifyContent: "center",
     alignItems: "center",
     minHeight: "100vh",
@@ -43,7 +43,7 @@ const useStyles = makeStyles((theme) => ({
     verticalAlign: "middle",
     wordSpacing: "0px",
     marginTop: 20,
-    color:'#F0B90B',
+    color: '#F0B90B',
     [theme.breakpoints.down("md")]: {
       marginTop: 20,
     },
@@ -66,9 +66,9 @@ const HomePage = () => {
         <Typography variant="h3" className={classes.heading}>
           Innovative DeFi and NFT Gaming Platform
         </Typography>
-        <Typography variant="h3" className={classes.subheading}>
+        {/* <Typography variant="h3" className={classes.subheading}>
           On Binance Smart Chain
-        </Typography>
+        </Typography> */}
       </div>
     </>
   );
