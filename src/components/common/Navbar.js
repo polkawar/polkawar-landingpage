@@ -206,7 +206,22 @@ const Navbar = () => {
               href="https://polkawar.com/docs/whitepaper.pdf"
               startIcon={<DescriptionOutlined />}
             >
-              Read white paper
+              White paper
+            </Button>
+          </a>
+          <a href="https://game.polkawar.com" style={{ textDecoration: "none" }}>
+            <Button
+              style={{
+                backgroundColor: "rgb(113 12 221)",
+                color: "#f8f8f8",
+                borderRadius: 25,
+                borderColor: "#c91f61",
+              }}
+              variant="outlined"
+              href="https://game.polkawar.com"
+
+            >
+              Game Portal
             </Button>
           </a>
         </ListItem>
@@ -337,6 +352,24 @@ const Navbar = () => {
               startIcon={<DescriptionOutlined />}
             >
               <p style={{ paddingTop: 16 }}> Read white paper</p>
+            </Button>
+          </Tooltip>
+          <Tooltip title="Polkawar Game Portal">
+            <Button
+              style={{
+                backgroundColor: "rgb(113 12 221)",
+                color: "#f8f8f8",
+                borderRadius: 25,
+                height: 35,
+                marginBottom: 2,
+                marginLeft: 20,
+                padding: 15,
+              }}
+              color="#021f47"
+              href="https://game.polkawar.com"
+
+            >
+              <p style={{ paddingTop: 16 }}> Game Portal</p>
             </Button>
           </Tooltip>
         </Toolbar>
