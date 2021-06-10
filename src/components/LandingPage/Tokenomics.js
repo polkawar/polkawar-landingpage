@@ -10,15 +10,15 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "space-around",
     alignItems: "center",
-    paddingLeft:50,
-    paddingRight:50,
+    paddingLeft: 50,
+    paddingRight: 50,
     background: `linear-gradient(to bottom right,#6a00dc,
         #f8f8f8,
         #f8f8f8,
         #f8f8f8)`,
     [theme.breakpoints.down("md")]: {
-      paddingLeft:10,
-      paddingRight:10,
+      paddingLeft: 10,
+      paddingRight: 10,
       padding: 10,
       paddingBottom: 35,
       paddingTop: 60,
@@ -99,7 +99,7 @@ const Tokenomics = () => {
           <li className={classes.listItem}>
             <p>
               <strong style={{ marginRight: 5 }}>Advisor & Strategic </strong>
-              5% TGE, 15% Month 2, 10% Month 3 to 10
+              Locked 3 months, 5% vesting for 20 months
             </p>
           </li>
           <li className={classes.listItem}>
