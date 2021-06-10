@@ -7,17 +7,17 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "center",
-    paddingTop:80,
-    paddingBottom:80,
+    paddingTop: 80,
+    paddingBottom: 80,
     [theme.breakpoints.down("md")]: {
       paddingBottom: 35,
-      paddingTop:100,
-      paddingBottom:50
+      paddingTop: 100,
+      paddingBottom: 50
     },
     [theme.breakpoints.down("xs")]: {
       paddingBottom: 35,
-      paddingTop:50,
-      paddingBottom:50
+      paddingTop: 50,
+      paddingBottom: 50
     },
   },
 
@@ -80,6 +80,13 @@ const Investor = () => {
             src="assets/bmwcapital.png"
             alt="logo"
             className={classes.imageWrapperBMW}
+          />
+        </a>
+        <a>
+          <img
+            src="assets/quiverx.png"
+            alt="logo"
+            className={classes.imageWrapper}
           />
         </a>
       </div>
