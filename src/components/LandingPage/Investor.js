@@ -49,7 +49,13 @@ const useStyles = makeStyles((theme) => ({
   listingsWrapper: {
     display: "flex",
     alignItems: "center",
+    justifyContent:'center',
+    flexWrap:'wrap'
   },
+  listItem: {
+    alignSelf:'center',
+    justifySelf:'center'
+  }
 }));
 
 const Investor = () => {
@@ -59,7 +65,7 @@ const Investor = () => {
     <div className={classes.background}>
       <p className={classes.para}>Investors and Partners</p>
       <div className={classes.listingsWrapper}>
-        <a href="https://polkabridge.org/">
+        <a className={classes.listItem} href="https://polkabridge.org/">
           <img
             src="assets/polkabridge.png"
             alt="logo"
@@ -67,7 +73,7 @@ const Investor = () => {
           />
         </a>
 
-        <a href="http://chinapolka.com/">
+        <a  className={classes.listItem} href="http://chinapolka.com/">
           <img
             src="assets/chinapolka.png"
             alt="logo"
@@ -75,14 +81,14 @@ const Investor = () => {
           />
         </a>
 
-        <a>
+        <a  className={classes.listItem}>
           <img
             src="assets/bmwcapital.png"
             alt="logo"
             className={classes.imageWrapperBMW}
           />
         </a>
-        <a>
+        <a  className={classes.listItem}>
           <img
             src="assets/quiverx.png"
             alt="logo"
