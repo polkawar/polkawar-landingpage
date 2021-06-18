@@ -1,25 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Alice&family=Annie+Use+Your+Telescope&family=Fredoka+One&family=New+Rocker&family=PT+Sans+Narrow&family=Press+Start+2P&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Alice&family=Annie+Use+Your+Telescope&family=Fredoka+One&family=New+Rocker&family=PT+Sans+Narrow&family=Patrick+Hand&family=Press+Start+2P&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;600;700;800&family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: 'Work Sans';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
-
-/* @font-face {
-  font-family: "Polkawar";
-  src: local("Polkawar"), url("./fonts/Joystick-5KjV.ttf") format("ttf");
-  /* other formats include: 'woff2', 'truetype, 'opentype',
-                            'embedded-opentype', and 'svg' */
-/* }  */
 
 a {
   text-decoration: none;
@@ -27,15 +17,15 @@ a {
 }
 
 h6 {
-  font-family: "New Rocker", cursive;
+  font-family: 'Balsamiq Sans', cursive;
 }
 h5 {
-  font-family: "New Rocker", cursive;
+  font-family: 'Balsamiq Sans', cursive;
 }
 
 p {
-  font-family: "Patrick Hand", cursive;
-  font-size: 18px;
+  font-family: 'Patrick Hand', cursive;
+
   /* font-weight: 100; */
 }
 .slider {
@@ -79,7 +69,7 @@ p {
 /* for desktop */
 @media screen and (min-width: 1025px) {
   .header-section {
-    background: url("./assets/feature.jpg") no-repeat;
+    background: url('./assets/feature.jpg') no-repeat;
     background-size: cover;
     background-position: center top 0%;
   }
@@ -88,7 +78,7 @@ p {
 /* 600 -1024 */
 @media (min-width: 600px) and (max-width: 1024px) {
   .header-section {
-    background: url("./assets/feature_ipad.jpg") no-repeat;
+    background: url('./assets/feature_ipad.jpg') no-repeat;
     background-size: cover;
     background-position: center right 10%;
   }
@@ -97,7 +87,7 @@ p {
 /* for tablets */
 @media (min-width: 481px) and (max-width: 601px) {
   .header-section {
-    background: url("./assets/feature.jpg") no-repeat center;
+    background: url('./assets/feature.jpg') no-repeat center;
     background-size: cover;
     /* max-height: fit-content;
     max-width: 100%; */
@@ -108,19 +98,13 @@ p {
 @media screen and (max-width: 480px) {
   .header-section {
     color: #f8f8f8;
-    background: url("./assets/mobile_version.jpg") no-repeat;
+    background: url('./assets/mobile_version.jpg') no-repeat;
     background-size: cover;
   }
 }
 
 .footer-section {
-  background-image: linear-gradient(
-    to bottom right,
-    #f8f8f8,
-    #f8f8f8,
-    #f8f8f8,
-    #c91f61
-  );
+  background-image: linear-gradient(to bottom right, #f8f8f8, #f8f8f8, #f8f8f8, #c91f61);
 }
 
 .appbar-section {

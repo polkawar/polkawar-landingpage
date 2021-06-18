@@ -1,57 +1,57 @@
-import { makeStyles, Typography } from "@material-ui/core";
-import React from "react";
+import { makeStyles, Typography } from '@material-ui/core';
+import React from 'react';
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    display: "flex",
+    display: 'flex',
     flexDirection: 'column',
-    justifyContent: "center",
-    alignItems: "center",
-    minHeight: "100vh",
-    color: "white",
+    justifyContent: 'center',
+    alignItems: 'center',
+    minHeight: '100vh',
+    color: 'white',
     marginTop: 60,
-    textShadow: "3px 4px black",
-    [theme.breakpoints.down("xs")]: {
+    textShadow: '3px 4px black',
+    [theme.breakpoints.down('xs')]: {
       marginTop: 0,
     },
   },
   heading: {
-    textAlign: "center",
+    textAlign: 'center',
     fontSize: 44,
     fontWeight: 600,
-    verticalAlign: "middle",
-    wordSpacing: "0px",
-    fontFamily: "'New Rocker', cursive",
+    verticalAlign: 'middle',
+    wordSpacing: '0px',
+    fontFamily: 'Balsamiq Sans',
     // marginTop: 30,
     paddingTop: 250,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down('md')]: {
       marginTop: 180,
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 36,
       marginTop: 10,
     },
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.down('xs')]: {
       fontSize: 30,
       marginTop: 0,
     },
   },
   subheading: {
-    textAlign: "center",
+    textAlign: 'center',
     fontSize: 24,
     fontWeight: 600,
-    verticalAlign: "middle",
-    wordSpacing: "0px",
+    verticalAlign: 'middle',
+    wordSpacing: '0px',
     marginTop: 20,
     color: '#F0B90B',
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down('md')]: {
       marginTop: 20,
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 22,
       marginTop: 10,
     },
-    [theme.breakpoints.down("xs")]: {
+    [theme.breakpoints.down('xs')]: {
       fontSize: 18,
       marginTop: 0,
     },
