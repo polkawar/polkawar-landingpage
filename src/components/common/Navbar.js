@@ -113,7 +113,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: '10px',
     cursor: 'pointer',
     fontFamily: 'Balsamiq Sans',
-    fontSize: '1.05vw',
+    fontSize: '1.1vw',
     [theme.breakpoints.up('md')]: {
       display: 'block',
     },
@@ -187,7 +187,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 5,
     color: '#ffffff',
     padding: '12px 16px 12px 16px',
-    fontWeight: 600,
+    fontWeight: 500,
     fontSize: '1.1vw',
     textTransform: 'none',
     [theme.breakpoints.down('sm')]: {
@@ -204,7 +204,7 @@ const useStyles = makeStyles((theme) => ({
     marginTop: 5,
     color: '#ffffff',
     padding: '12px 16px 12px 16px',
-    fontWeight: 600,
+    fontWeight: 500,
     fontSize: '1.1vw',
     textTransform: 'none',
     [theme.breakpoints.down('sm')]: {

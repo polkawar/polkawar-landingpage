@@ -66,9 +66,6 @@ const HomePage = () => {
         <Typography variant="h3" className={classes.heading}>
           Innovative DeFi and NFT Gaming Platform
         </Typography>
-        {/* <Typography variant="h3" className={classes.subheading}>
-          On Binance Smart Chain
-        </Typography> */}
       </div>
     </>
   );
