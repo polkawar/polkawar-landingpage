@@ -13,10 +13,7 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-around',
     paddingLeft: 50,
     paddingRight: 50,
-    background: `linear-gradient(to bottom right,#c91f61,
-      #f8f8f8,
-      #f8f8f8,
-      #f8f8f8)`,
+
     [theme.breakpoints.down('sm')]: {
       padding: 10,
       flexDirection: 'column',
@@ -68,7 +65,7 @@ const useStyles = makeStyles((theme) => ({
   subHeading: {
     fontSize: 28,
     fontFamily: 'Balsamiq Sans',
-
+    color: theme.palette.pbr.textPrimary,
     [theme.breakpoints.down('sm')]: {
       fontSize: 28,
       marginTop: 10,
@@ -83,6 +80,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 10,
     textAlign: 'left',
     lineHeight: 1.75,
+    color: theme.palette.pbr.textPrimary,
     [theme.breakpoints.down('sm')]: {
       fontSize: 16,
       marginTop: 10,

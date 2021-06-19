@@ -1,39 +1,35 @@
-import { CardMedia, Grid, makeStyles, Typography } from "@material-ui/core";
-import React from "react";
-import release from "../../assets/release_schedule.png";
+import { CardMedia, Grid, makeStyles, Typography } from '@material-ui/core';
+import React from 'react';
 
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 80,
-    height: "100%",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "center",
-    alignItems: "center",
-    background: `linear-gradient(to bottom right,#6a00dc,
-      #f8f8f8,
-      #f8f8f8,
-      #f8f8f8)`,
-    [theme.breakpoints.down("sm")]: {
+    height: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'center',
+
+    [theme.breakpoints.down('sm')]: {
       padding: 10,
       paddingBottom: 35,
       paddingTop: 60,
-      minHeight: "80vh",
+      minHeight: '80vh',
     },
   },
   heading: {
-    color: theme.palette.pbr.textSecondary,
+    color: theme.palette.pbr.textPrimary,
     fontSize: 36,
     fontWeight: 600,
-    verticalAlign: "middle",
-    wordSpacing: "0px",
-    alignSelf: "center",
+    verticalAlign: 'middle',
+    wordSpacing: '0px',
+    alignSelf: 'center',
     paddingTop: 0,
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down('md')]: {
       fontSize: 36,
       marginBottom: 140,
     },
-    [theme.breakpoints.down("sm")]: {
+    [theme.breakpoints.down('sm')]: {
       fontSize: 28,
       marginBottom: 100,
     },
@@ -42,10 +38,10 @@ const useStyles = makeStyles((theme) => ({
   image: {
     width: 950,
     height: 'auto',
-    [theme.breakpoints.down("md")]: {
-      width: "95%",
+    [theme.breakpoints.down('md')]: {
+      width: '95%',
       height: 'auto',
-    }
+    },
   },
 }));
 
@@ -54,7 +50,7 @@ const Release = () => {
   return (
     <div className={classes.background}>
       <h6 className={classes.heading}>Token release schedule</h6>
-      <img  className={classes.image} src={release}  alt="release schedule"/>
+      <img className={classes.image} src="assets/release.png" alt="release schedule" />
     </div>
   );
 };

@@ -7,9 +7,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    minHeight: '100vh',
+    minHeight: '80vh',
     color: 'white',
-    marginTop: 60,
     textShadow: '3px 4px black',
     [theme.breakpoints.down('xs')]: {
       marginTop: 0,
@@ -23,7 +22,7 @@ const useStyles = makeStyles((theme) => ({
     wordSpacing: '0px',
     fontFamily: 'Balsamiq Sans',
     // marginTop: 30,
-    paddingTop: 250,
+    paddingTop: 150,
     [theme.breakpoints.down('md')]: {
       marginTop: 180,
     },
@@ -61,13 +60,11 @@ const useStyles = makeStyles((theme) => ({
 const HomePage = () => {
   const classes = useStyles();
   return (
-    <>
-      <div className={classes.background}>
-        <Typography variant="h3" className={classes.heading}>
-          Innovative DeFi and NFT Gaming Platform
-        </Typography>
-      </div>
-    </>
+    <div className={classes.background}>
+      <Typography variant="h3" className={classes.heading}>
+        Innovative DeFi and NFT Gaming Platform
+      </Typography>
+    </div>
   );
 };
 
