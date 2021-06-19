@@ -1,39 +1,40 @@
-import { IconButton, Tooltip } from "@material-ui/core";
-import { makeStyles } from "@material-ui/core/styles";
-import { Twitter, Telegram, GitHub, Email } from "@material-ui/icons";
+import { IconButton, Tooltip } from '@material-ui/core';
+import { makeStyles } from '@material-ui/core/styles';
+import { Twitter, Telegram, GitHub, Email } from '@material-ui/icons';
 
 const useStyles = makeStyles((theme) => ({
   background: {
     marginTop: 150,
-    height: "400px",
-    [theme.breakpoints.down("sm")]: {
+    height: '400px',
+    [theme.breakpoints.down('sm')]: {
       padding: 5,
       paddingTop: 0,
       paddingBottom: 25,
-      paddingLeft:20,
-      paddingRight:20,
+      paddingLeft: 20,
+      paddingRight: 20,
     },
   },
   heading: {
-    color: theme.palette.pbr.textSecondary,
-    textAlign: "center",
+    color: theme.palette.pbr.textPrimary,
+    textAlign: 'center',
     fontSize: 36,
     fontWeight: 600,
-    verticalAlign: "middle",
-    wordSpacing: "0px",
-    [theme.breakpoints.down("sm")]: {
+    verticalAlign: 'middle',
+    wordSpacing: '0px',
+    [theme.breakpoints.down('sm')]: {
       fontSize: 28,
     },
   },
   para: {
+    color: theme.palette.pbr.textPrimary,
     fontWeight: 400,
-    verticalAlign: "baseline",
-    letterSpacing: "-0.8px",
+    verticalAlign: 'baseline',
+    letterSpacing: '-0.8px',
     margin: 0,
     paddingTop: 10,
     paddingBottom: 10,
-    textAlign: "center",
-    [theme.breakpoints.down("sm")]: {
+    textAlign: 'center',
+    [theme.breakpoints.down('sm')]: {
       fontSize: 16,
     },
   },
@@ -43,7 +44,7 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     fontSize: 32,
-    color: "#414141",
+    color: '#e5e5e5',
   },
   iconWrapper: {
     marginRight: '0.8%',
@@ -60,9 +61,7 @@ const Footer = () => {
           <h6 className={classes.heading}>
             Follow PolkaWar<span className={classes.highlight}></span>
           </h6>
-          <p className={classes.para}>
-            To Get latest updates on PolkaWar join!
-          </p>
+          <p className={classes.para}>To Get latest updates on PolkaWar join!</p>
           <div className="d-flex justify-content-center mt-4">
             <div className={classes.iconWrapper}>
               <Tooltip title="Twitter" aria-label="add1">
@@ -141,8 +140,7 @@ const Footer = () => {
               <img src="assets/logo.png" alt="logo" height="50px" />
             </div>
             <p className={classes.para}>
-              Copyright 2021 <span className={classes.highlight}>PolkaWar</span>
-              . All Rights Reserved.
+              Copyright 2021 <span className={classes.highlight}>PolkaWar</span>. All Rights Reserved.
             </p>
           </div>
         </div>

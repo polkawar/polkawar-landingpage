@@ -5,6 +5,11 @@ body {
   font-family: 'Work Sans';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('https://i.kym-cdn.com/photos/images/original/000/397/638/108.gif') fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 code {
@@ -59,14 +64,17 @@ h5 {
   width: 50px;
   background: none;
   border: 0;
+  color: '#ffffff';
+  background-color: #f8f8f8;
 }
 
 /* for desktop */
 @media screen and (min-width: 1025px) {
   .header-section {
-    background: url('./assets/feature.jpg') no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('./assets/feature.jpg');
     background-size: cover;
-    background-position: center top 0%;
+    background-position: center;
+    height: 550px;
   }
 }
 
@@ -96,10 +104,6 @@ h5 {
     background: url('./assets/mobile_version.jpg') no-repeat;
     background-size: cover;
   }
-}
-
-.footer-section {
-  background-image: linear-gradient(to bottom right, #f8f8f8, #f8f8f8, #f8f8f8, #c91f61);
 }
 
 .appbar-section {

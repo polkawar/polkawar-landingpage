@@ -25,10 +25,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     paddingLeft: 50,
     paddingRight: 50,
-    background: `linear-gradient(to bottom right,#c91f61,
-      #f8f8f8,
-      #f8f8f8,
-      #f8f8f8)`,
+
     [theme.breakpoints.down('sm')]: {
       padding: 10,
       paddingBottom: 35,
@@ -61,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 10,
   },
   heading: {
-    color: theme.palette.pbr.textSecondary,
+    color: theme.palette.pbr.textPrimary,
     textAlign: 'left',
     fontSize: 36,
     fontWeight: 600,
@@ -86,6 +83,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 10,
     paddingBottom: 10,
     textAlign: 'left',
+
     [theme.breakpoints.down('sm')]: {
       fontSize: 16,
       paddingTop: 5,
@@ -106,6 +104,7 @@ const useStyles = makeStyles((theme) => ({
     width: 300,
     height: '100%',
     marginBottom: 20,
+    backgroundColor: '#212121',
   },
   textWrapper: {
     backgroundColor: '#f3e5f5',

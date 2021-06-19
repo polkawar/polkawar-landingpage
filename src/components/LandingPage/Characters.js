@@ -13,10 +13,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     passingLeft: 50,
     paddingRight: 50,
-    background: `linear-gradient(to bottom right,#6a00dc,
-      #f8f8f8,
-      #f8f8f8,
-      #f8f8f8)`,
+
     [theme.breakpoints.down('sm')]: {
       padding: 10,
       paddingBottom: 35,
@@ -60,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: theme.palette.pbr.textSecondary,
+    color: theme.palette.pbr.textPrimary,
     textAlign: 'left',
     fontSize: 36,
     fontWeight: 600,
@@ -82,6 +79,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 10,
     paddingBottom: 20,
     textAlign: 'left',
+    color: theme.palette.pbr.textPrimary,
     [theme.breakpoints.down('sm')]: {
       fontSize: 16,
       paddingTop: 5,
@@ -91,6 +89,7 @@ const useStyles = makeStyles((theme) => ({
   title: {
     textAlign: 'center',
     fontWeight: 600,
+    color: theme.palette.pbr.textPrimary,
   },
 }));
 

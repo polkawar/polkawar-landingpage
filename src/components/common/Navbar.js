@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   appBarBackground: {
-    background: `linear-gradient(to right,#c91f61, #f8f8f8)`,
+    background: `#414141`,
   },
   menuButton: {
     textTransform: 'none',
@@ -102,7 +102,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   tabs: {
-    color: theme.palette.pbr.textSecondary,
+    color: '#fbfbfb',
     display: 'none',
 
     fontWeight: 500,
@@ -273,7 +273,7 @@ const Navbar = () => {
 
   return (
     <div className={classes.grow}>
-      <AppBar color="transparent" position="fixed" className={classes.appBarBackground}>
+      <AppBar position="relative" className={classes.appBarBackground}>
         <Toolbar className={classes.sectionDesktop}>
           <Link
             exact="true"
