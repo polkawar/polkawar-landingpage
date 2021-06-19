@@ -49,12 +49,12 @@ const useStyles = makeStyles((theme) => ({
   listingsWrapper: {
     display: "flex",
     alignItems: "center",
-    justifyContent:'center',
-    flexWrap:'wrap'
+    justifyContent: 'center',
+    flexWrap: 'wrap'
   },
   listItem: {
-    alignSelf:'center',
-    justifySelf:'center'
+    alignSelf: 'center',
+    justifySelf: 'center'
   }
 }));
 
@@ -73,7 +73,7 @@ const Investor = () => {
           />
         </a>
 
-        <a  className={classes.listItem} href="http://chinapolka.com/">
+        <a className={classes.listItem} href="http://chinapolka.com/">
           <img
             src="assets/chinapolka.png"
             alt="logo"
@@ -81,16 +81,30 @@ const Investor = () => {
           />
         </a>
 
-        <a  className={classes.listItem}>
+        <a className={classes.listItem}>
           <img
             src="assets/bmwcapital.png"
             alt="logo"
             className={classes.imageWrapperBMW}
           />
         </a>
-        <a  className={classes.listItem}>
+        <a className={classes.listItem} href="https://quiverx.io/">
           <img
             src="assets/quiverx.png"
+            alt="logo"
+            className={classes.imageWrapper}
+          />
+        </a>
+        <a className={classes.listItem} href="https://yellowroad.app/">
+          <img
+            src="assets/yellow.png"
+            alt="logo"
+            className={classes.imageWrapper}
+          />
+        </a>
+        <a className={classes.listItem} href="https://www.daostarter.pro">
+          <img
+            src="assets/daostater.png"
             alt="logo"
             className={classes.imageWrapper}
           />
