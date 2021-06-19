@@ -105,9 +105,13 @@ const useStyles = makeStyles((theme) => ({
     height: '100%',
     marginBottom: 20,
     backgroundColor: '#212121',
+    border: '1px solid #ffffff',
+    background: `linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('https://cutewallpaper.org/21/street-fighter-backgrounds/Pin-on-Fighting-Game-Backgrounds.gif')`,
+    backgroundSize: 'cover',
   },
   textWrapper: {
-    backgroundColor: '#f3e5f5',
+    backgroundColor: '#757575',
     width: '100%',
   },
 }));
