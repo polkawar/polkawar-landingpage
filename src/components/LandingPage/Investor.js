@@ -74,6 +74,7 @@ const useStyles = makeStyles((theme) => ({
   card: {
     padding: 5,
     backgroundColor: '#e5e5e5',
+    borderRadius: 12,
   },
   cardWrapper: {
     padding: 5,

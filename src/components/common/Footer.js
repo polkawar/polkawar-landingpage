@@ -44,10 +44,19 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     fontSize: 32,
-    color: '#e5e5e5',
+    color: '#000000',
   },
   iconWrapper: {
-    marginRight: '0.8%',
+    marginRight: 15,
+  },
+  iconButton: {
+    backgroundColor: 'white',
+    height: 50,
+    width: 50,
+    color: 'black',
+    '&:hover': {
+      background: theme.palette.pbr.primary,
+    },
   },
 }));
 
@@ -66,7 +75,7 @@ const Footer = () => {
             <div className={classes.iconWrapper}>
               <Tooltip title="Twitter" aria-label="add1">
                 <a href="https://twitter.com/polkawarnft">
-                  <IconButton aria-label="Twitter">
+                  <IconButton aria-label="Twitter" className={classes.iconButton}>
                     <Twitter className={classes.icon} />
                   </IconButton>
                 </a>
@@ -75,7 +84,7 @@ const Footer = () => {
             <div className={classes.iconWrapper}>
               <Tooltip title="Telegram">
                 <a href="https://t.me/polkawarchat">
-                  <IconButton aria-label="Telegram">
+                  <IconButton aria-label="Telegram" className={classes.iconButton}>
                     <Telegram className={classes.icon} />
                   </IconButton>
                 </a>
@@ -85,7 +94,7 @@ const Footer = () => {
             <div className={classes.iconWrapper}>
               <Tooltip title="Github">
                 <a href="https://github.com/polkawar">
-                  <IconButton aria-label="Github">
+                  <IconButton aria-label="Github" className={classes.iconButton}>
                     <GitHub className={classes.icon} />
                   </IconButton>
                 </a>
@@ -95,7 +104,7 @@ const Footer = () => {
             <div className={classes.iconWrapper}>
               <Tooltip title="Discord">
                 <a href="https://discord.gg/NQFjXkMqgk">
-                  <IconButton aria-label="Discord">
+                  <IconButton aria-label="Discord" className={classes.iconButton}>
                     <img
                       src="assets/discord.png"
                       height="30px"
@@ -111,7 +120,7 @@ const Footer = () => {
             <div className={classes.iconWrapper}>
               <Tooltip title="Medium">
                 <a href="https://medium.com/@polkawar">
-                  <IconButton aria-label="Discord">
+                  <IconButton aria-label="Discord" className={classes.iconButton}>
                     <img
                       src="assets/medium.png"
                       height="30px"
@@ -127,7 +136,7 @@ const Footer = () => {
             <div className={classes.iconWrapper}>
               <Tooltip title="Email">
                 <a href="mailto:hello@polkawar.com">
-                  <IconButton aria-label="Email">
+                  <IconButton aria-label="Email" className={classes.iconButton}>
                     <Email className={classes.icon} />
                   </IconButton>
                 </a>
