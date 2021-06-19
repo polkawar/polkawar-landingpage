@@ -1,6 +1,5 @@
 import { CardMedia, Grid, makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
-import release from '../../assets/release_schedule.png';
 
 const useStyles = makeStyles((theme) => ({
   background: {
@@ -51,7 +50,7 @@ const Release = () => {
   return (
     <div className={classes.background}>
       <h6 className={classes.heading}>Token release schedule</h6>
-      <img className={classes.image} src={release} alt="release schedule" />
+      <img className={classes.image} src="assets/release.png" alt="release schedule" />
     </div>
   );
 };

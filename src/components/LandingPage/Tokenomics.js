@@ -88,7 +88,7 @@ const Tokenomics = () => {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <img className={classes.image} src={tokenomics_back} />
+      <img className={classes.image} src="assets/token.png" />
 
       <div className={classes.textContainer}>
         <h6 className={classes.heading}>Tokenomics & Locking</h6>
