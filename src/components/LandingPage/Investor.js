@@ -8,6 +8,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
+    paddingLeft: 50,
+    paddingRight: 50,
     paddingTop: 80,
     paddingBottom: 80,
     [theme.breakpoints.down('md')]: {
@@ -22,7 +24,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: theme.palette.pbr.textPrimary,
+    color: theme.palette.pbr.heading,
     textAlign: 'center',
     fontSize: 36,
     fontWeight: 600,
@@ -47,7 +49,7 @@ const useStyles = makeStyles((theme) => ({
   },
   imageWrapper: {
     padding: 20,
-    height: '100px',
+    height: '70px',
     [theme.breakpoints.down('sm')]: {
       height: '54px',
       padding: 15,
@@ -55,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
   },
   imageWrapperBMW: {
     padding: 10,
-    height: '100px',
+    height: '70px',
     [theme.breakpoints.down('sm')]: {
       height: '54px',
       padding: 15,
@@ -63,9 +65,10 @@ const useStyles = makeStyles((theme) => ({
   },
   listingsWrapper: {
     display: 'flex',
-    alignItems: 'center',
     justifyContent: 'center',
+    alignItems: 'center',
     flexWrap: 'wrap',
+    padding: 10,
   },
   listItem: {
     alignSelf: 'center',
@@ -111,10 +114,26 @@ const Investor = () => {
             </a>
           </Card>
         </div>
+      </div>
+      <div className={classes.listingsWrapper}>
         <div className={classes.cardWrapper}>
           <Card className={classes.card}>
             <a className={classes.listItem}>
               <img src="assets/quiverx.png" alt="logo" className={classes.imageWrapper} />
+            </a>
+          </Card>
+        </div>
+        <div className={classes.cardWrapper}>
+          <Card className={classes.card}>
+            <a className={classes.listItem}>
+              <img src="assets/daostater.png" alt="logo" className={classes.imageWrapper} />
+            </a>
+          </Card>
+        </div>
+        <div className={classes.cardWrapper}>
+          <Card className={classes.card}>
+            <a className={classes.listItem}>
+              <img src="assets/yellow.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </Card>
         </div>

@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   image: {
     width: 300,
 
-    marginBottom: 40,
+    marginBottom: 10,
     [theme.breakpoints.down('md')]: {
       width: 350,
       height: 'auto',
@@ -52,12 +52,13 @@ const useStyles = makeStyles((theme) => ({
     marginLeft: 2,
     marginRight: 2,
     borderRadius: 10,
+
     [theme.breakpoints.down('md')]: {
       maxWidth: 350,
     },
   },
   heading: {
-    color: theme.palette.pbr.textPrimary,
+    color: theme.palette.pbr.heading,
     textAlign: 'left',
     fontSize: 36,
     fontWeight: 600,
@@ -79,6 +80,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 10,
     paddingBottom: 20,
     textAlign: 'left',
+
     color: theme.palette.pbr.textPrimary,
     [theme.breakpoints.down('sm')]: {
       fontSize: 16,

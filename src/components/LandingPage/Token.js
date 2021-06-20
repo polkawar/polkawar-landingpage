@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
   },
   heading: {
-    color: theme.palette.pbr.textPrimary,
+    color: theme.palette.pbr.heading,
     // textAlign: "left",
     fontSize: 36,
     fontWeight: 600,

@@ -15,7 +15,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   heading: {
-    color: theme.palette.pbr.textPrimary,
+    color: theme.palette.pbr.heading,
     textAlign: 'center',
     fontSize: 36,
     fontWeight: 600,

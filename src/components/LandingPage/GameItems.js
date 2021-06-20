@@ -1,5 +1,4 @@
 import Box from '@material-ui/core/Box';
-
 import makeStyles from '@material-ui/core/styles/makeStyles';
 import Typography from '@material-ui/core/Typography';
 import React from 'react';
@@ -58,7 +57,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 10,
   },
   heading: {
-    color: theme.palette.pbr.textPrimary,
+    color: theme.palette.pbr.heading,
     textAlign: 'left',
     fontSize: 36,
     fontWeight: 600,
@@ -100,19 +99,21 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
-    borderRadius: 10,
+    borderRadius: 7,
     width: 300,
     height: '100%',
-    marginBottom: 20,
-    backgroundColor: '#212121',
-    border: '1px solid #ffffff',
-    background: `linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url('https://cutewallpaper.org/21/street-fighter-backgrounds/Pin-on-Fighting-Game-Backgrounds.gif')`,
+    backgroundColor: '#ffb74d',
+    border: '3px solid #757575',
+    background: `linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)),
+    url('https://media.istockphoto.com/photos/fire-flames-isolated-on-black-picture-id1138307761?k=6&m=1138307761&s=612x612&w=0&h=88Awwf62GbZb26IMLWv8I66D7WU_P_voCdzZEBu4Bvo=')`,
     backgroundSize: 'cover',
+    marginBottom: 40,
   },
   textWrapper: {
-    backgroundColor: '#757575',
+    backgroundColor: '#e5e5e5',
     width: '100%',
+    borderBottomLeftRadius: 7,
+    borderBottomRightRadius: 7,
   },
 }));
 
@@ -120,7 +121,7 @@ const GameItems = () => {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <h6 className={classes.heading}>Game Items</h6>
+      <h1 className={classes.heading}>Game Items</h1>
 
       <div className={classes.itemsContainer}>
         <Card className={classes.card}>

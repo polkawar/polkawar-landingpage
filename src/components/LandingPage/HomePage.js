@@ -1,26 +1,25 @@
-import { makeStyles, Typography } from '@material-ui/core';
 import React from 'react';
+import magician from '../../assets/magician.png';
+import { makeStyles, Button, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
-    alignItems: 'center',
     minHeight: '80vh',
     color: 'white',
     textShadow: '3px 4px black',
+    paddingLeft: 60,
     [theme.breakpoints.down('xs')]: {
       marginTop: 0,
     },
   },
   heading: {
-    textAlign: 'center',
+    textAlign: 'left',
     fontSize: 44,
     fontWeight: 600,
     verticalAlign: 'middle',
     wordSpacing: '0px',
     fontFamily: 'Balsamiq Sans',
+    lineHeight: '60px',
     // marginTop: 30,
     paddingTop: 150,
     [theme.breakpoints.down('md')]: {
@@ -33,6 +32,16 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('xs')]: {
       fontSize: 30,
       marginTop: 0,
+    },
+  },
+  image: {
+    width: 400,
+    marginBottom: 10,
+    [theme.breakpoints.down('md')]: {
+      width: 350,
+      height: 'auto',
+      marginTop: 5,
+      marginBottom: 10,
     },
   },
   subheading: {
@@ -55,15 +64,62 @@ const useStyles = makeStyles((theme) => ({
       marginTop: 0,
     },
   },
+  para: {
+    lineHeight: '50px',
+  },
+  buttonGame: {
+    borderRadius: '30px',
+    background: `linear-gradient(to right,#6a1b9a, #8e24aa)`,
+    lineHeight: '24px',
+    verticalAlign: 'baseline',
+    letterSpacing: '-1px',
+    margin: 0,
+    marginTop: 15,
+    color: '#ffffff',
+    padding: '18px 20px 18px 20px',
+    fontWeight: 600,
+    fontSize: '1.2vw',
+    textTransform: 'none',
+
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 18,
+    },
+  },
 }));
 
 const HomePage = () => {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <Typography variant="h3" className={classes.heading}>
-        Innovative DeFi and NFT Gaming Platform
-      </Typography>
+      <div className="container">
+        <div className="row">
+          <div className="col-md-7">
+            {' '}
+            <Typography variant="h3" className={classes.heading}>
+              Innovative DeFi and NFT <br />
+              Gaming Platform
+            </Typography>
+            <Typography variant="body1" className={classes.para}>
+              Experience a new era of blockchain based gaming platform
+            </Typography>
+            <div>
+              <a href="https://game.polkawar.com">
+                <Button className={classes.buttonGame} variant="contained">
+                  Access Game Portal
+                </Button>
+              </a>
+            </div>
+          </div>
+          <div className="col-md-5">
+            <div>
+              <img
+                className={classes.image}
+                src="https://i.pinimg.com/originals/69/71/a6/6971a636742d73567f4be4e5329bce4f.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

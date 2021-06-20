@@ -30,7 +30,7 @@ const useStyles = makeStyles((theme) => ({
     flexGrow: 1,
   },
   appBarBackground: {
-    background: `#414141`,
+    background: `#000000`,
   },
   menuButton: {
     textTransform: 'none',

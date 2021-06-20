@@ -20,7 +20,7 @@ export const theme = createMuiTheme({
       textPrimary: '#ffffff',
       textSecondary: '#1e1e1e',
       textLight: '#212121',
-      textDark: '#e5e5e5',
+      heading: '#e5e5e5',
     },
   },
   typography: {

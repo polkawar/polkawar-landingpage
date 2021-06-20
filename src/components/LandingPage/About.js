@@ -25,8 +25,9 @@ const useStyles = makeStyles((theme) => ({
   image: {
     width: 700,
     height: 'auto',
-    marginTop: 50,
+    borderRadius: 71,
     marginBottom: 10,
+
     [theme.breakpoints.down('md')]: {
       width: 550,
       height: 'auto',
@@ -49,6 +50,8 @@ const useStyles = makeStyles((theme) => ({
     marginBottom: 10,
     marginLeft: 5,
     marginRight: 5,
+    backgroundColor: 'black',
+    padding: 40,
     [theme.breakpoints.down('md')]: {
       maxWidth: '70%',
       marginTop: 35,
@@ -63,8 +66,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   subHeading: {
-    fontSize: 28,
+    fontSize: 42,
     fontFamily: 'Balsamiq Sans',
+
     color: theme.palette.pbr.textPrimary,
     [theme.breakpoints.down('sm')]: {
       fontSize: 28,
@@ -80,6 +84,7 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 10,
     textAlign: 'left',
     lineHeight: 1.75,
+    fontSize: 17,
     color: theme.palette.pbr.textPrimary,
     [theme.breakpoints.down('sm')]: {
       fontSize: 16,
@@ -97,15 +102,14 @@ const About = () => {
       <div className={classes.textContainer}>
         <h5 className={classes.subHeading}>The Decentralized Fighting Game Platform</h5>
         <Typography component="p" className={classes.para}>
-          PolkaWar is a blockchain based NFT gaming platform and marketplace.
+          PolkaWar is a blockchain based NFT gaming platform and marketplace. Inspired by the recent crypto NFT and
+          gaming narratives, PolkaWar will combine and synergize them both to build an attractive platform.
           <br />
-          Inspired by the recent crypto NFT and gaming narratives, PolkaWar will combine and synergize them both to
-          build an attractive platform.
-          <br />
-          The game allows every player to build a character and participate in battle against other players.
-          <br />
-          Further, PolkaWar will also include an NFT marketplace, where players can sell their items, weapons and
-          upgraded equipment for crypto. Some of the items can even be redeemed for real world replicas.
+          <div style={{ marginTop: 10 }}>
+            The game allows every player to build a character and participate in battle against other players. Further,
+            PolkaWar will also include an NFT marketplace, where players can sell their items, weapons and upgraded
+            equipment for crypto. Some of the items can even be redeemed for real world replicas.
+          </div>{' '}
         </Typography>
       </div>
     </div>

@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 80,
     height: '100%',
     display: 'flex',
-    justifyContent: 'space-around',
+    justifyContent: 'space-evenly',
     alignItems: 'center',
     paddingLeft: 50,
     paddingRight: 50,
@@ -42,6 +42,8 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     marginRight: 60,
+    backgroundColor: 'black',
+    padding: 40,
     [theme.breakpoints.down('sm')]: {
       marginRight: 0,
     },
@@ -59,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   image: {
-    width: 830,
+    width: 700,
     height: 'auto',
     [theme.breakpoints.down('sm')]: {
       width: '100%',
