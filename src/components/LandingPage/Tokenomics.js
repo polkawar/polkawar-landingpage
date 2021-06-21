@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 0,
     marginBottom: 40,
     [theme.breakpoints.down('sm')]: {
-      fontSize: 28,
+      fontSize: 24,
       marginBottom: 45,
       alignSelf: 'center',
     },
@@ -44,8 +44,9 @@ const useStyles = makeStyles((theme) => ({
     marginRight: 60,
     backgroundColor: 'black',
     padding: 40,
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       marginRight: 0,
+      padding: 10,
     },
   },
   listText: {
@@ -80,9 +81,16 @@ const useStyles = makeStyles((theme) => ({
   listItem: {
     marginBottom: 10,
     color: theme.palette.pbr.textPrimary,
+    [theme.breakpoints.down('md')]: {
+      fontSize: 16,
+    },
   },
   subheading: {
     color: theme.palette.pbr.textPrimary,
+    fontSize: 20,
+    [theme.breakpoints.down('sm')]: {
+      fontSize: 18,
+    },
   },
 }));
 

@@ -30,6 +30,11 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'start',
     width: '100%',
     marginTop: 20,
+    [theme.breakpoints.down('md')]: {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'center',
+    },
   },
   item: {
     marginBottom: 40,
@@ -39,6 +44,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'black',
     padding: 30,
     height: '350px',
+    [theme.breakpoints.down('md')]: {
+      height: '100%',
+    },
   },
   heading: {
     // color: theme.palette.pbr.textPrimary,
@@ -52,8 +60,7 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 0,
     [theme.breakpoints.down('sm')]: {
       paddingTop: 15,
-
-      fontSize: 28,
+      fontSize: 24,
       marginBottom: 25,
     },
   },
@@ -61,7 +68,6 @@ const useStyles = makeStyles((theme) => ({
     color: theme.palette.pbr.textPrimary,
     [theme.breakpoints.down('sm')]: {
       paddingTop: 15,
-
       marginBottom: 25,
     },
   },
@@ -74,8 +80,8 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 10,
     textAlign: 'left',
     height: 'auto',
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 16,
+    [theme.breakpoints.down('md')]: {
+      fontSize: 14,
       paddingTop: 5,
       marginTop: 0,
     },

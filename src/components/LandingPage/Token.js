@@ -15,6 +15,9 @@ const useStyles = makeStyles((theme) => ({
     height: '100%',
     flexDirection: 'column',
     alignItems: 'center',
+    [theme.breakpoints.down('md')]: {
+      padding: 10,
+    },
   },
   heading: {
     color: theme.palette.pbr.heading,

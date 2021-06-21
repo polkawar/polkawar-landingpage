@@ -45,9 +45,15 @@ const useStyles = makeStyles((theme) => ({
   icon: {
     fontSize: 32,
     color: '#000000',
+    [theme.breakpoints.down('md')]: {
+      fontSize: 24,
+    },
   },
   iconWrapper: {
     marginRight: 15,
+    [theme.breakpoints.down('md')]: {
+      marginRight: 5,
+    },
   },
   iconButton: {
     backgroundColor: 'white',
@@ -56,6 +62,10 @@ const useStyles = makeStyles((theme) => ({
     color: 'black',
     '&:hover': {
       background: theme.palette.pbr.primary,
+    },
+    [theme.breakpoints.down('md')]: {
+      height: 40,
+      width: 40,
     },
   },
 }));

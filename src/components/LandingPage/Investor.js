@@ -13,14 +13,10 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: 80,
     paddingBottom: 80,
     [theme.breakpoints.down('md')]: {
-      paddingBottom: 35,
-      paddingTop: 100,
-      paddingBottom: 50,
-    },
-    [theme.breakpoints.down('xs')]: {
-      paddingBottom: 35,
-      paddingTop: 50,
-      paddingBottom: 50,
+      paddingTop: 10,
+      paddingLeft: 10,
+      paddingRight: 10,
+      paddingBottom: 10,
     },
   },
   heading: {
@@ -50,7 +46,7 @@ const useStyles = makeStyles((theme) => ({
   imageWrapper: {
     padding: 20,
     height: '70px',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       height: '54px',
       padding: 15,
     },
@@ -58,9 +54,11 @@ const useStyles = makeStyles((theme) => ({
   imageWrapperBMW: {
     padding: 10,
     height: '70px',
-    [theme.breakpoints.down('sm')]: {
-      height: '54px',
-      padding: 15,
+    [theme.breakpoints.down('md')]: {
+      height: '61px',
+      padding: 10,
+      paddingLeft: 2,
+      paddingRight: 2,
     },
   },
   listingsWrapper: {
@@ -78,6 +76,13 @@ const useStyles = makeStyles((theme) => ({
     padding: 5,
     backgroundColor: '#e5e5e5',
     borderRadius: 12,
+    [theme.breakpoints.down('md')]: {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      height: 80,
+      width: 150,
+    },
   },
   cardWrapper: {
     padding: 5,

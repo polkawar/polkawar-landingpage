@@ -27,8 +27,8 @@ const useStyles = makeStyles((theme) => ({
 
     marginBottom: 10,
     [theme.breakpoints.down('md')]: {
-      width: 350,
-      height: 'auto',
+      width: '100%',
+
       marginTop: 5,
       marginBottom: 10,
     },
@@ -54,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: 10,
 
     [theme.breakpoints.down('md')]: {
-      maxWidth: 350,
+      width: '100%',
     },
   },
   heading: {

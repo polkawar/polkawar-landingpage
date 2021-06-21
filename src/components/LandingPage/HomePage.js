@@ -10,6 +10,7 @@ const useStyles = makeStyles((theme) => ({
     paddingLeft: 60,
     [theme.breakpoints.down('xs')]: {
       marginTop: 0,
+      paddingLeft: 10,
     },
   },
   heading: {
@@ -23,22 +24,18 @@ const useStyles = makeStyles((theme) => ({
     // marginTop: 30,
     paddingTop: 150,
     [theme.breakpoints.down('md')]: {
-      marginTop: 180,
-    },
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 36,
-      marginTop: 10,
-    },
-    [theme.breakpoints.down('xs')]: {
-      fontSize: 30,
-      marginTop: 0,
+      fontSize: 32,
+      lineHeight: '44px',
+      paddingTop: 80,
     },
   },
   image: {
     width: '100%',
     marginBottom: 10,
+    display: 'block',
     [theme.breakpoints.down('md')]: {
-      width: 350,
+      display: 'none',
+      width: 300,
       height: 'auto',
       marginTop: 5,
       marginBottom: 10,
@@ -54,18 +51,15 @@ const useStyles = makeStyles((theme) => ({
     color: '#F0B90B',
     [theme.breakpoints.down('md')]: {
       marginTop: 20,
-    },
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 22,
-      marginTop: 10,
-    },
-    [theme.breakpoints.down('xs')]: {
       fontSize: 18,
-      marginTop: 0,
     },
   },
   para: {
-    lineHeight: '50px',
+    lineHeight: '30px',
+    [theme.breakpoints.down('md')]: {
+      marginTop: 15,
+      fontSize: 14,
+    },
   },
   buttonGame: {
     borderRadius: '30px',
@@ -80,9 +74,10 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     fontSize: '1.2vw',
     textTransform: 'none',
-
     [theme.breakpoints.down('sm')]: {
-      fontSize: 18,
+      fontSize: 16,
+      padding: '12px 15px 12px 15px',
+      fontWeight: 500,
     },
   },
 }));

@@ -6,15 +6,17 @@ const useStyles = makeStyles((theme) => ({
     padding: 80,
     height: '100%',
     display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'center',
+    flexDirection: 'row',
+    justifyContent: 'space-evenly',
     alignItems: 'center',
 
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
+      flexDirection: 'column',
+      justifyContent: 'center',
+      alignItems: 'center',
       padding: 10,
       paddingBottom: 35,
-      paddingTop: 60,
-      minHeight: '80vh',
+      height: '400px',
     },
   },
   heading: {
@@ -23,15 +25,11 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 600,
     verticalAlign: 'middle',
     wordSpacing: '0px',
-    alignSelf: 'center',
+    textAlign: 'center',
     paddingTop: 0,
     [theme.breakpoints.down('md')]: {
-      fontSize: 36,
-      marginBottom: 140,
-    },
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 28,
-      marginBottom: 100,
+      fontSize: 24,
+      marginBottom: 50,
     },
   },
 

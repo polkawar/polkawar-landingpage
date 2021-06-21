@@ -31,6 +31,9 @@ const useStyles = makeStyles((theme) => ({
   },
   appBarBackground: {
     background: `#000000`,
+    [theme.breakpoints.down('md')]: {
+      borderBottom: '1px solid #e5e5e5',
+    },
   },
   menuButton: {
     textTransform: 'none',
@@ -82,6 +85,9 @@ const useStyles = makeStyles((theme) => ({
   },
   menuIcon: {
     color: '#212121',
+    [theme.breakpoints.down('md')]: {
+      color: '#e5e5e5',
+    },
   },
   list: {
     width: '250px',

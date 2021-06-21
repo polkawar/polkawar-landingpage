@@ -25,27 +25,18 @@ const useStyles = makeStyles((theme) => ({
   image: {
     width: 700,
     height: 'auto',
-    borderRadius: 71,
     marginBottom: 10,
 
     [theme.breakpoints.down('md')]: {
-      width: 550,
-      height: 'auto',
-      marginTop: 50,
+      width: '100%',
+      marginTop: 30,
       marginBottom: 30,
-    },
-    [theme.breakpoints.down('xs')]: {
-      width: '90%',
-      height: 'auto',
-      marginTop: 60,
-      marginBottom: 20,
     },
   },
   textContainer: {
     display: 'flex',
     flexDirection: 'column',
     maxWidth: 650,
-    margin: 0,
     marginTop: 10,
     marginBottom: 10,
     marginLeft: 5,
@@ -53,16 +44,8 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: 'black',
     padding: 40,
     [theme.breakpoints.down('md')]: {
-      maxWidth: '70%',
-      marginTop: 35,
-    },
-    [theme.breakpoints.down('sm')]: {
-      maxWidth: '70%',
-      marginTop: 35,
-    },
-    [theme.breakpoints.down('xs')]: {
-      maxWidth: '90%',
-      marginTop: 35,
+      marginTop: 15,
+      padding: 20,
     },
   },
   subHeading: {
@@ -71,7 +54,7 @@ const useStyles = makeStyles((theme) => ({
 
     color: theme.palette.pbr.textPrimary,
     [theme.breakpoints.down('sm')]: {
-      fontSize: 28,
+      fontSize: 22,
       marginTop: 10,
     },
   },
@@ -86,8 +69,8 @@ const useStyles = makeStyles((theme) => ({
     lineHeight: 1.75,
     fontSize: 17,
     color: theme.palette.pbr.textPrimary,
-    [theme.breakpoints.down('sm')]: {
-      fontSize: 16,
+    [theme.breakpoints.down('md')]: {
+      fontSize: 14,
       marginTop: 10,
     },
   },
