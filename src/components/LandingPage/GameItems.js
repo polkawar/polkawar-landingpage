@@ -149,12 +149,12 @@ const useStyles = makeStyles((theme) => ({
   frameList: {
     fontWeight: '500',
     lineHeight: 1.2,
-    color: 'white',
+    color: 'black',
   },
   frameListMount: {
     fontWeight: '500',
     lineHeight: 1.1,
-    color: 'white',
+    color: 'black',
     fontSize: 13,
   },
 }));
