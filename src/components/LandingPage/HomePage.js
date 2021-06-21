@@ -1,5 +1,5 @@
 import React from 'react';
-import magician from '../../assets/magician.png';
+import headerRight from '../../assets/header-right.png';
 import { makeStyles, Button, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   image: {
-    width: 400,
+    width: '100%',
     marginBottom: 10,
     [theme.breakpoints.down('md')]: {
       width: 350,
@@ -93,7 +93,7 @@ const HomePage = () => {
     <div className={classes.background}>
       <div className="container">
         <div className="row">
-          <div className="col-md-7">
+          <div className="col-md-6">
             {' '}
             <Typography variant="h3" className={classes.heading}>
               Innovative DeFi and NFT <br />
@@ -110,12 +110,9 @@ const HomePage = () => {
               </a>
             </div>
           </div>
-          <div className="col-md-5">
+          <div className="col-md-6">
             <div>
-              <img
-                className={classes.image}
-                src="https://i.pinimg.com/originals/69/71/a6/6971a636742d73567f4be4e5329bce4f.png"
-              />
+              <img className={classes.image} src={headerRight} />
             </div>
           </div>
         </div>

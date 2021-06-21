@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   },
   para: {
     color: theme.palette.pbr.textPrimary,
-    fontWeight: 400,
+    fontWeight: 500,
     verticalAlign: 'baseline',
     letterSpacing: '-0.8px',
     margin: 0,
