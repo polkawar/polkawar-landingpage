@@ -101,7 +101,7 @@ const Token = () => {
           <div className={classes.card}>
             <div className="d-flex justify-content-center">
               {' '}
-              <img src={token} width="50px" />
+              <img src={token} width="50px" height="50px" alt="logo" />
             </div>
 
             <h5 className={classes.title}>Play to earn</h5>

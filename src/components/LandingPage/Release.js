@@ -3,20 +3,12 @@ import React from 'react';
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    padding: 80,
+    padding: 40,
     height: '100%',
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-evenly',
-    alignItems: 'center',
 
     [theme.breakpoints.down('md')]: {
-      flexDirection: 'column',
-      justifyContent: 'center',
-      alignItems: 'center',
       padding: 10,
       paddingBottom: 35,
-      height: '400px',
     },
   },
   heading: {
@@ -47,8 +39,18 @@ const Release = () => {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <h6 className={classes.heading}>Token release schedule</h6>
-      <img className={classes.image} src="assets/release.png" alt="release schedule" />
+      <div className="row">
+        <div className="col-12 col-md-6">
+          {' '}
+          <h6 className={classes.heading}>Token release schedule</h6>
+        </div>
+        <div className="col-12 col-md-6">
+          {' '}
+          <div className="text-center">
+            <img className={classes.image} src="assets/release.png" alt="release schedule" />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
