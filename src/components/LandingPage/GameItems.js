@@ -145,11 +145,18 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     top: '64%',
     left: '10%',
+    [theme.breakpoints.down('md')]: {
+      top: '65%',
+    },
   },
   frameList: {
     fontWeight: '500',
     lineHeight: 1.2,
     color: 'black',
+    [theme.breakpoints.down('md')]: {
+      fontSize: 13,
+      lineHeight: 1.4,
+    },
   },
   frameListMount: {
     fontWeight: '500',
