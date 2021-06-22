@@ -8,7 +8,8 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     textShadow: '3px 4px black',
     paddingLeft: 60,
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('md')]: {
+      minHeight: 500,
       marginTop: 0,
       paddingLeft: 10,
     },
@@ -32,10 +33,9 @@ const useStyles = makeStyles((theme) => ({
   image: {
     width: '100%',
     marginBottom: 10,
-    display: 'block',
+
     [theme.breakpoints.down('md')]: {
-      display: 'none',
-      width: 300,
+      width: 350,
       height: 'auto',
       marginTop: 5,
       marginBottom: 10,

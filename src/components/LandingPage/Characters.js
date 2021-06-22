@@ -131,7 +131,7 @@ const useStyles = makeStyles((theme) => ({
 
   frameStats: {
     position: 'absolute',
-    top: '62%',
+    top: '61%',
     left: '20%',
     [theme.breakpoints.down('md')]: {
       top: '53%',
