@@ -98,40 +98,48 @@ const Tokenomics = () => {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <img className={classes.image} src="assets/token.png" />
+      <div className="row">
+        <div className="col-md-6">
+          <div className="text-center">
+            {' '}
+            <img className={classes.image} src="assets/token.png" alt="tokenomics" />{' '}
+          </div>
+        </div>
+        <div className="col-md-6">
+          <div className={classes.textContainer}>
+            <h6 className={classes.heading}>Tokenomics & Locking</h6>
 
-      <div className={classes.textContainer}>
-        <h6 className={classes.heading}>Tokenomics & Locking</h6>
-
-        <h5 className={classes.subheading}>Unlock Schedule</h5>
-        <ul className={classes.listItems}>
-          <li className={classes.listItem}>
-            <p>
-              <strong style={{ marginRight: 5 }}>Advisor & Strategic </strong>
-              Locked 3 months, 5% vesting for 20 months
-            </p>
-          </li>
-          <li className={classes.listItem}>
-            <p>
-              <strong style={{ marginRight: 5 }}>Private Sale</strong> 10% TGE, 10% for 9 months
-            </p>
-          </li>
-          <li className={classes.listItem}>
-            <p>
-              <strong style={{ marginRight: 5 }}>Foundation</strong> 20% every 6 month
-            </p>
-          </li>
-          <li className={classes.listItem}>
-            <p>
-              <strong style={{ marginRight: 5 }}>Marketing</strong> 5% vesting for 20 months
-            </p>
-          </li>
-          <li className={classes.listItem}>
-            <p>
-              <strong style={{ marginRight: 5 }}>In game mining & Platform staking</strong> 5% vesting for 20 months
-            </p>
-          </li>
-        </ul>
+            <h5 className={classes.subheading}>Unlock Schedule</h5>
+            <ul className={classes.listItems}>
+              <li className={classes.listItem}>
+                <p>
+                  <strong style={{ marginRight: 5 }}>Advisor & Strategic </strong>
+                  Locked 3 months, 5% vesting for 20 months
+                </p>
+              </li>
+              <li className={classes.listItem}>
+                <p>
+                  <strong style={{ marginRight: 5 }}>Private Sale</strong> 10% TGE, 10% for 9 months
+                </p>
+              </li>
+              <li className={classes.listItem}>
+                <p>
+                  <strong style={{ marginRight: 5 }}>Foundation</strong> 20% every 6 month
+                </p>
+              </li>
+              <li className={classes.listItem}>
+                <p>
+                  <strong style={{ marginRight: 5 }}>Marketing</strong> 5% vesting for 20 months
+                </p>
+              </li>
+              <li className={classes.listItem}>
+                <p>
+                  <strong style={{ marginRight: 5 }}>In game mining & Platform staking</strong> 5% vesting for 20 months
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );

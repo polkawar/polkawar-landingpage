@@ -101,7 +101,7 @@ const Token = () => {
           <div className={classes.card}>
             <div className="d-flex justify-content-center">
               {' '}
-              <img src={token} width="50px" height="50px" alt="logo" />
+              <img src={token} width="50px" height="50px" alt="logo" style={{ width: 50, height: 50 }} />
             </div>
 
             <h5 className={classes.title}>Play to earn</h5>
@@ -116,7 +116,7 @@ const Token = () => {
           <div className={classes.card}>
             <div className="d-flex justify-content-center">
               {' '}
-              <img src={token} width="50px" />
+              <img src={token} width="50px" height="50px" style={{ width: 50, height: 50 }} alt="logo" />
             </div>
             <h5 className={classes.title}>Purchase & Renting Fee</h5>
             <div className="d-flex justify-content-center">
@@ -130,7 +130,7 @@ const Token = () => {
           <div className={classes.card}>
             <div className="d-flex justify-content-center">
               {' '}
-              <img src={token} width="50px" />
+              <img src={token} width="50px" height="50px" style={{ width: 50, height: 50 }} alt="logo" />
             </div>
             <h5 className={classes.title}>Staking rewards</h5>
             <div className="d-flex justify-content-center">
@@ -147,7 +147,7 @@ const Token = () => {
           <div className={classes.card}>
             <div className="d-flex justify-content-center">
               {' '}
-              <img src={token} width="50px" />
+              <img src={token} width="50px" height="50px" style={{ width: 50, height: 50 }} alt="logo" />
             </div>
             <h5 className={classes.title}>Marketplace fee</h5>
             <div className="d-flex justify-content-center">
@@ -161,7 +161,7 @@ const Token = () => {
           <div className={classes.card}>
             <div className="d-flex justify-content-center">
               {' '}
-              <img src={token} width="50px" />
+              <img src={token} width="50px" height="50px" style={{ width: 50, height: 50 }} alt="logo" />
             </div>
             <h5 className={classes.title}>Farming rewards</h5>
             <div className="d-flex justify-content-center">
@@ -175,7 +175,7 @@ const Token = () => {
           <div className={classes.card}>
             <div className="d-flex justify-content-center">
               {' '}
-              <img src={token} width="50px" />
+              <img src={token} width="50px" height="50px" style={{ width: 50, height: 50 }} alt="logo" />
             </div>
             <h5 className={classes.title}>Governance</h5>
             <div className="d-flex justify-content-center">

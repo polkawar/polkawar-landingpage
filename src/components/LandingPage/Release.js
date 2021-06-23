@@ -39,17 +39,12 @@ const Release = () => {
   const classes = useStyles();
   return (
     <div className={classes.background}>
-      <div className="row">
-        <div className="col-12 col-md-6">
-          {' '}
-          <h6 className={classes.heading}>Token release schedule</h6>
-        </div>
-        <div className="col-12 col-md-6">
-          {' '}
-          <div className="text-center">
-            <img className={classes.image} src="assets/release.png" alt="release schedule" />
-          </div>
-        </div>
+      <div>
+        {' '}
+        <h6 className={classes.heading}>Token release schedule</h6>
+      </div>
+      <div className="text-center">
+        <img className={classes.image} src="assets/release.png" alt="release schedule" />
       </div>
     </div>
   );

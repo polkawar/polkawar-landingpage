@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
   itemsContainer: {
     display: 'flex',
     justifyContent: 'space-around',
-    alignItems: 'start',
+    alignItems: 'center',
     width: '100%',
     marginTop: 20,
     [theme.breakpoints.down('md')]: {
