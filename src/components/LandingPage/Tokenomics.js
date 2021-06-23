@@ -92,6 +92,18 @@ const useStyles = makeStyles((theme) => ({
       fontSize: 18,
     },
   },
+  displayMobile: {
+    display: 'none',
+    [theme.breakpoints.down('md')]: {
+      display: 'block',
+    },
+  },
+  displayDesktop: {
+    display: 'block',
+    [theme.breakpoints.down('md')]: {
+      display: 'none',
+    },
+  },
 }));
 
 const Tokenomics = () => {
@@ -100,15 +112,22 @@ const Tokenomics = () => {
     <div className={classes.background}>
       <div className="row">
         <div className="col-md-6">
-          <div className="text-center">
-            {' '}
-            <img className={classes.image} src="assets/token.png" alt="tokenomics" />{' '}
+          <div className={classes.displayDesktop}>
+            <div className="text-center">
+              {' '}
+              <img className={classes.image} src="assets/token.png" alt="tokenomics" />{' '}
+            </div>
           </div>
         </div>
         <div className="col-md-6">
           <div className={classes.textContainer}>
             <h6 className={classes.heading}>Tokenomics & Locking</h6>
-
+            <div className={classes.displayMobile}>
+              <div className="text-center">
+                {' '}
+                <img className={classes.image} src="assets/token.png" alt="tokenomics" />{' '}
+              </div>
+            </div>
             <h5 className={classes.subheading}>Unlock Schedule</h5>
             <ul className={classes.listItems}>
               <li className={classes.listItem}>
