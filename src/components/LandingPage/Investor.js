@@ -123,20 +123,21 @@ const Investor = () => {
       <div className={classes.listingsWrapper}>
         <div className={classes.cardWrapper}>
           <Card className={classes.card}>
-            <a className={classes.listItem}>
+            <a className={classes.listItem} href="https://quiverx.io/">
               <img src="assets/quiverx.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </Card>
         </div>
+
         <div className={classes.cardWrapper}>
-          <Card className={classes.card}>
-            <a className={classes.listItem}>
-              <img src="assets/daostater.png" alt="logo" className={classes.imageWrapper} />
+          <Card className={classes.card} style={{ backgroundColor: '#000000', border: '1px solid #ffffff' }}>
+            <a className={classes.listItem} href="https://oddiyana.ventures">
+              <img src="assets/oddinaya.png" alt="logo" className={classes.imageWrapper} style={{ padding: 0 }} />
             </a>
           </Card>
         </div>
         <div className={classes.cardWrapper}>
-          <Card className={classes.card}>
+          <Card className={classes.card} href="https://yellowroad.app/">
             <a className={classes.listItem}>
               <img src="assets/yellow.png" alt="logo" className={classes.imageWrapper} />
             </a>
@@ -146,21 +147,15 @@ const Investor = () => {
       <div className={classes.listingsWrapper}>
         <div className={classes.cardWrapper}>
           <Card className={classes.card}>
-            <a className={classes.listItem}>
-              <img src="assets/DuckDAO.svg" alt="logo" className={classes.imageWrapper} />
+            <a className={classes.listItem} href="https://www.daostarter.pro">
+              <img src="assets/daostater.png" alt="logo" className={classes.imageWrapper} />
             </a>
           </Card>
         </div>
-        <div className={classes.cardWrapper}>
-          <Card className={classes.card} style={{ backgroundColor: '#000000', border: '1px solid #ffffff' }}>
-            <a className={classes.listItem}>
-              <img src="assets/oddinaya.png" alt="logo" className={classes.imageWrapper} style={{ padding: 0 }} />
-            </a>
-          </Card>
-        </div>
+
         <div className={classes.cardWrapper}>
           <Card className={classes.card}>
-            <a className={classes.listItem}>
+            <a className={classes.listItem} href="https://duckstarter.io">
               <img src="assets/DuckStarter.svg" alt="logo" className={classes.imageWrapper} />
             </a>
           </Card>
