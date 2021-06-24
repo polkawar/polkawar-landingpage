@@ -44,10 +44,10 @@ const useStyles = makeStyles((theme) => ({
     textAlign: 'center',
   },
   imageWrapper: {
-    padding: 20,
-    height: '70px',
+    padding: 10,
+    height: '65px',
     [theme.breakpoints.down('md')]: {
-      height: '54px',
+      height: '50px',
       padding: 15,
     },
   },
@@ -139,6 +139,29 @@ const Investor = () => {
           <Card className={classes.card}>
             <a className={classes.listItem}>
               <img src="assets/yellow.png" alt="logo" className={classes.imageWrapper} />
+            </a>
+          </Card>
+        </div>
+      </div>
+      <div className={classes.listingsWrapper}>
+        <div className={classes.cardWrapper}>
+          <Card className={classes.card}>
+            <a className={classes.listItem}>
+              <img src="assets/DuckDAO.svg" alt="logo" className={classes.imageWrapper} />
+            </a>
+          </Card>
+        </div>
+        <div className={classes.cardWrapper}>
+          <Card className={classes.card} style={{ backgroundColor: '#000000', border: '1px solid #ffffff' }}>
+            <a className={classes.listItem}>
+              <img src="assets/oddinaya.png" alt="logo" className={classes.imageWrapper} style={{ padding: 0 }} />
+            </a>
+          </Card>
+        </div>
+        <div className={classes.cardWrapper}>
+          <Card className={classes.card}>
+            <a className={classes.listItem}>
+              <img src="assets/DuckStarter.svg" alt="logo" className={classes.imageWrapper} />
             </a>
           </Card>
         </div>
