@@ -1,6 +1,21 @@
-# Getting Started with Create React App
+# PolkaWar - NFT & Defi Based Battle Game Platform | Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+PolkaWar is the NFT and Defi based battle game platform build on Binance Smart Chain and using Unity for game console. 
+
+This repository is dedicated to the landing page of the product.
+
+![Website Screenshot](polkawar.png)
+
+
+Following sections are developed:
+
+1. Product Demo
+2. Tokenomics
+3. Roadmap
+4. Use cases
+5. Product MVP
+6. Investors
+
 
 ## Available Scripts
 
