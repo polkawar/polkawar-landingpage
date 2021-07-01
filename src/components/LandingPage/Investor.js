@@ -160,6 +160,13 @@ const Investor = () => {
             </a>
           </Card>
         </div>
+        <div className={classes.cardWrapper}>
+          <Card className={classes.card}>
+            <a className={classes.listItem} href="https://unifarm.co/">
+              <img src="assets/unifarm.png" alt="logo" className={classes.imageWrapper} />
+            </a>
+          </Card>
+        </div>
       </div>
     </div>
   );
