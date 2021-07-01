@@ -13,7 +13,7 @@ import Tokenomics from './Tokenomics';
 
 const LandingPage = () => {
   return (
-    <div style={{ overflowX: 'hidden' }}>
+    <div className="cover">
       <section className="header-section">
         <HomePage />
       </section>

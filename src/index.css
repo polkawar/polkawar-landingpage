@@ -6,10 +6,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url('https://cutewallpaper.org/21/street-fighter-backgrounds/Pin-on-Fighting-Game-Backgrounds.gif') fixed;
   background-size: cover;
-  background-position: center;
+  background-position: center; */
 }
 
 code {
@@ -73,4 +73,11 @@ h5 {
   padding-right: 100px; */
   color: #021f47;
   background-image: linear-gradient(to bottom, #f8f8f8, #6a00dc);
+}
+.cover {
+  overflow-x: hidden;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url('https://cutewallpaper.org/21/street-fighter-backgrounds/Pin-on-Fighting-Game-Backgrounds.gif') fixed;
+  background-size: cover;
+  background-position: center;
 }
