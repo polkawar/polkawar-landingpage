@@ -53,8 +53,8 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   card: {
-    background: `linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
-    url('https://image.freepik.com/free-vector/modern-abstract-dark-purple-twitch-background-design-with-dots-lines_126194-569.jpg') `,
+    background: `linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url('./assets/gamebg.jpg') `,
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     height: 320,
