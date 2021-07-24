@@ -273,6 +273,13 @@ const Navbar = () => {
             </Button>
           </a>
         </ListItem>
+        <ListItem button style={{ marginTop: 5 }}>
+          <a href="https://stake.polkabridge.org" style={{ textDecoration: 'none' }}>
+            <Button variant="outlined" className={classes.outlinedGame}>
+              Staking
+            </Button>
+          </a>
+        </ListItem>
       </List>
     </div>
   );
@@ -343,12 +350,22 @@ const Navbar = () => {
               </a>
             </Tooltip>
           </div>
-          <div>
+          <div style={{ paddingRight: 10 }}>
             {' '}
             <Tooltip title="Polkawar Game Portal">
               <a href="https://game.polkawar.com">
                 <Button className={classes.buttonGame} variant="contained">
                   Game Portal
+                </Button>
+              </a>
+            </Tooltip>
+          </div>
+          <div>
+            {' '}
+            <Tooltip title="Polkawar Staking">
+              <a href="https://stake.polkabridge.org">
+                <Button className={classes.buttonGame} variant="contained">
+                  Staking
                 </Button>
               </a>
             </Tooltip>
