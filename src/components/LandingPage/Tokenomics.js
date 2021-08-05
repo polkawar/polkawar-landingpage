@@ -62,11 +62,9 @@ const useStyles = makeStyles((theme) => ({
     },
   },
   image: {
-    width: 700,
-    height: "auto",
+    width: 600,
     [theme.breakpoints.down("sm")]: {
       width: "100%",
-      height: "auto",
       marginTop: 10,
     },
   },
@@ -94,13 +92,13 @@ const useStyles = makeStyles((theme) => ({
   },
   displayMobile: {
     display: "none",
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("xs")]: {
       display: "block",
     },
   },
   displayDesktop: {
     display: "block",
-    [theme.breakpoints.down("md")]: {
+    [theme.breakpoints.down("xs")]: {
       display: "none",
     },
   },
@@ -111,7 +109,7 @@ const Tokenomics = () => {
   return (
     <div className={classes.background}>
       <div className="row">
-        <div className="col-md-6">
+        <div className="col-md-6 ">
           <div className={classes.displayDesktop}>
             <div className="text-center">
               {" "}
@@ -131,7 +129,7 @@ const Tokenomics = () => {
                 {" "}
                 <img
                   className={classes.image}
-                  src="assets/token.png"
+                  src="images/supply_new.png"
                   alt="tokenomics"
                 />{" "}
               </div>
@@ -143,7 +141,13 @@ const Tokenomics = () => {
                   <strong style={{ marginRight: 5 }}>
                     Advisor & Strategic{" "}
                   </strong>
-                  <a target="_blank" style={{ color: "red" }} href="https://bscscan.com/tx/0x13fc4596eed14c34e059d7c10db861f92d309768887ee87256aa0c6f7a9071fc">Buy back and burned on 05th Aug, 2021</a>
+                  <a
+                    target="_blank"
+                    style={{ color: "red" }}
+                    href="https://bscscan.com/tx/0x13fc4596eed14c34e059d7c10db861f92d309768887ee87256aa0c6f7a9071fc"
+                  >
+                    Buy back and burned on 05th Aug, 2021
+                  </a>
                 </p>
               </li>
               <li className={classes.listItem}>
