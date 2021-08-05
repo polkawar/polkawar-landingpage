@@ -133,7 +133,7 @@ const Tokenomics = () => {
               <li className={classes.listItem}>
                 <p>
                   <strong style={{ marginRight: 5 }}>Advisor & Strategic </strong>
-                  Locked 3 months, 5% vesting for 20 months
+                  Buy back and burned on 05th Aug, 2021
                 </p>
               </li>
               <li className={classes.listItem}>
