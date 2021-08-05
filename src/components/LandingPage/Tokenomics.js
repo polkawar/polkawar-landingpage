@@ -143,7 +143,7 @@ const Tokenomics = () => {
                   <strong style={{ marginRight: 5 }}>
                     Advisor & Strategic{" "}
                   </strong>
-                  Buy back and burned on 05th Aug, 2021
+                  <a target="_blank" style={{ color: "red" }} href="https://bscscan.com/tx/0x13fc4596eed14c34e059d7c10db861f92d309768887ee87256aa0c6f7a9071fc">Buy back and burned on 05th Aug, 2021</a>
                 </p>
               </li>
               <li className={classes.listItem}>
