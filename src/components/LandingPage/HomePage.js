@@ -1,83 +1,89 @@
-import React from 'react';
-import headerRight from '../../assets/header-right.png';
-import { makeStyles, Button, Typography } from '@material-ui/core';
+import React from "react";
+import headerRight from "../../assets/header-right.png";
+import { makeStyles, Button, Typography } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   background: {
-    minHeight: '80vh',
-    color: 'white',
-    textShadow: '3px 4px black',
+    minHeight: "80vh",
+    color: "white",
+    textShadow: "3px 4px black",
     paddingLeft: 60,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down("md")]: {
       minHeight: 500,
       marginTop: 0,
       paddingLeft: 10,
     },
   },
   heading: {
-    textAlign: 'left',
+    textAlign: "left",
     fontSize: 44,
     fontWeight: 600,
-    verticalAlign: 'middle',
-    wordSpacing: '0px',
-    fontFamily: 'Balsamiq Sans',
-    lineHeight: '60px',
+    verticalAlign: "middle",
+    wordSpacing: "0px",
+    fontFamily: "Balsamiq Sans",
+    lineHeight: "60px",
     // marginTop: 30,
     paddingTop: 150,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down("md")]: {
       fontSize: 32,
-      lineHeight: '44px',
+      lineHeight: "44px",
       paddingTop: 80,
     },
   },
   image: {
-    width: '100%',
+    width: "100%",
     marginBottom: 10,
 
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down("md")]: {
       width: 350,
-      height: 'auto',
+      height: "auto",
       marginTop: 5,
       marginBottom: 10,
     },
   },
   subheading: {
-    textAlign: 'center',
+    textAlign: "center",
     fontSize: 24,
     fontWeight: 600,
-    verticalAlign: 'middle',
-    wordSpacing: '0px',
+    verticalAlign: "middle",
+    wordSpacing: "0px",
     marginTop: 20,
-    color: '#F0B90B',
-    [theme.breakpoints.down('md')]: {
+    color: "#F0B90B",
+    [theme.breakpoints.down("md")]: {
       marginTop: 20,
       fontSize: 18,
     },
   },
   para: {
-    lineHeight: '30px',
-    [theme.breakpoints.down('md')]: {
+    lineHeight: "30px",
+    [theme.breakpoints.down("md")]: {
       marginTop: 15,
       fontSize: 14,
     },
   },
   buttonGame: {
-    borderRadius: '30px',
+    borderRadius: "30px",
     background: `linear-gradient(to right,#6a1b9a, #8e24aa)`,
-    lineHeight: '24px',
-    verticalAlign: 'baseline',
-    letterSpacing: '-1px',
+    lineHeight: "24px",
+    verticalAlign: "baseline",
+    letterSpacing: "-1px",
     margin: 0,
     marginTop: 15,
-    color: '#ffffff',
-    padding: '18px 20px 18px 20px',
+    color: "#ffffff",
+    padding: "18px 20px 18px 20px",
     fontWeight: 600,
-    fontSize: '1.2vw',
-    textTransform: 'none',
-    [theme.breakpoints.down('sm')]: {
+    fontSize: "1.2vw",
+    textTransform: "none",
+    [theme.breakpoints.down("sm")]: {
       fontSize: 16,
-      padding: '12px 15px 12px 15px',
+      padding: "12px 15px 12px 15px",
       fontWeight: 500,
+    },
+  },
+  iframeWrapper: {
+    display: "block",
+    [theme.breakpoints.down("sm")]: {
+      display: "none",
     },
   },
 }));
@@ -89,7 +95,7 @@ const HomePage = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6">
-            {' '}
+            {" "}
             <Typography variant="h3" className={classes.heading}>
               Innovative DeFi and NFT <br />
               Gaming Platform
@@ -106,8 +112,35 @@ const HomePage = () => {
             </div>
           </div>
           <div className="col-md-6">
-            <div>
-              <img className={classes.image} src={headerRight} />
+            <div
+              style={{
+                minHeight: 480,
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "flex-end",
+                alignItems: "center",
+              }}
+            >
+              <h5>Trailer is Out Now!</h5>
+
+              <div
+                style={{
+                  borderRadius: 7,
+                  border: "3px solid #ffffff",
+                  width: "100%",
+                }}
+              >
+                <iframe
+                  width="100%"
+                  height="315"
+                  src="https://www.youtube.com/embed/aKOSMkOJEeU"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+              {/* <img className={classes.image} src={headerRight} /> */}
             </div>
           </div>
         </div>
