@@ -39,8 +39,8 @@ const getStepsData = () => {
       id: '3',
       title: 'Q3, 2021',
       heading: 'Testnet',
-      subheadings: ['Character system', 'Battle system', 'PolkaWar marketplace testnet', 'PolkaWar Realm testnet'],
-      completed: false,
+      subheadings: ['Character system', 'Battle system', 'Pre-launch events'],
+      completed: true,
       icon: farming,
     },
     {
@@ -48,10 +48,9 @@ const getStepsData = () => {
       title: 'Q4, 2021',
       heading: 'Mainnet',
       subheadings: [
-        'Equipment system',
-        'PolkaWar marketplace mainnet',
-        'PolkaWar Realm mainnet',
-        'Launch Game on Casper Blockchain Testnet',
+        '3D Equipment system',
+        'PolkaWar Marketplace mainnet',
+        'PolkaWar Realm mainnet'
       ],
       completed: false,
       icon: launch,
@@ -59,12 +58,11 @@ const getStepsData = () => {
     {
       id: '5',
       title: 'Q1 - Q2, 2022',
-      heading: 'PolkaWar Logictic & Multichain',
+      heading: 'PolkaWar Logictic & Metaverse',
       subheadings: [
-        'NFT Renting',
         'PolkaWar Logictics',
-        'Multichain Marketplace (Support PolkaDot,Solona,Matic, Casper)',
-        'Launch Game on Casper Blockchain Mainnet',
+        'Multichain Marketplace (Support PolkaDot, Polygon)',
+        'Integrate VR and Metaverse'
       ],
       completed: false,
       icon: chain,
