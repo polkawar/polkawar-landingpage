@@ -1,70 +1,79 @@
-import { Avatar, IconButton, makeStyles } from '@material-ui/core';
-import React, { useEffect, useState } from 'react';
-import research from '../../assets/research.png';
-import farming from '../../assets/farming.png';
-import launch from '../../assets/launch.png';
-import tokenomics from '../../assets/tokenomics.png';
-import chain from '../../assets/chain.png';
+import { Avatar, IconButton, makeStyles } from "@material-ui/core";
+import React, { useEffect, useState } from "react";
+import research from "../../assets/research.png";
+import farming from "../../assets/farming.png";
+import launch from "../../assets/launch.png";
+import tokenomics from "../../assets/tokenomics.png";
+import chain from "../../assets/chain.png";
 
-import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
-import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
+import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
+import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
 
 const getStepsData = () => {
   return [
     {
-      id: '1',
-      title: 'Q1, 2021',
-      heading: 'Research',
-      subheadings: ['Research on Defi & NFTs', 'Team forming', 'Design PWAR tokenomics'],
+      id: "1",
+      title: "Q1, 2021",
+      heading: "Research",
+      subheadings: [
+        "Research on Defi & NFTs",
+        "Team forming",
+        "Design PWAR tokenomics",
+      ],
       completed: true,
       icon: research,
     },
     {
-      id: '2',
-      title: 'Q2, 2021',
-      heading: 'MVP & Sale',
+      id: "2",
+      title: "Q2, 2021",
+      heading: "MVP & Sale",
       subheadings: [
-        'Release PWAR token smart contract',
-        'Private sale',
-        'Whitepaper & website',
-        'MVP',
-        'NFT Airdrop campaign',
-        'Public sale & listing on PancakeSwap',
-        'Staking & Farming',
+        "Release PWAR token smart contract",
+        "Private sale",
+        "Whitepaper & website",
+        "MVP",
+        "NFT Airdrop campaign",
+        "Public sale & listing on PancakeSwap",
+        "Staking & Farming",
       ],
       completed: true,
       icon: tokenomics,
     },
     {
-      id: '3',
-      title: 'Q3, 2021',
-      heading: 'Testnet',
-      subheadings: ['Character system', 'Battle system', 'PolkaWar marketplace testnet', 'PolkaWar Realm testnet'],
+      id: "3",
+      title: "Q3, 2021",
+      heading: "Testnet",
+      subheadings: [
+        "Character system",
+        "Battle system",
+        "PolkaWar marketplace testnet",
+        "PolkaWar Realm testnet",
+      ],
       completed: false,
       icon: farming,
     },
     {
-      id: '4',
-      title: 'Q4, 2021',
-      heading: 'Mainnet',
+      id: "4",
+      title: "Q4, 2021",
+      heading: "Mainnet",
       subheadings: [
-        'Equipment system',
-        'PolkaWar marketplace mainnet',
-        'PolkaWar Realm mainnet',
-        'Launch Game on Casper Blockchain Testnet',
+        "Equipment system",
+        "PolkaWar marketplace mainnet",
+        "PolkaWar Realm mainnet",
+        "Launch Game on Casper Blockchain Testnet",
       ],
       completed: false,
       icon: launch,
     },
     {
-      id: '5',
-      title: 'Q1 - Q2, 2022',
-      heading: 'PolkaWar Logictic & Multichain',
+      id: "5",
+      title: "Q1 - Q2, 2022",
+      heading: "PolkaWar Logictic & Multichain",
       subheadings: [
-        'NFT Renting',
-        'PolkaWar Logictics',
-        'Multichain Marketplace (Support PolkaDot,Solona,Matic, Casper)',
-        'Launch Game on Casper Blockchain Mainnet',
+        "NFT Renting",
+        "PolkaWar Logictics",
+        "Multichain Marketplace (Support PolkaDot,Solona,Matic, Casper)",
+        "Launch Game on Casper Blockchain Mainnet",
       ],
       completed: false,
       icon: chain,
@@ -75,9 +84,9 @@ const getStepsData = () => {
 const useStyles = makeStyles((theme) => ({
   background: {
     padding: 20,
-    height: '100%',
+    height: "100%",
     paddingLeft: 100,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down("md")]: {
       paddingLeft: 15,
       padding: 0,
       paddingBottom: 15,
@@ -86,40 +95,40 @@ const useStyles = makeStyles((theme) => ({
   },
   heading: {
     color: theme.palette.pbr.heading,
-    textAlign: 'center',
+    textAlign: "center",
     fontSize: 36,
     fontWeight: 600,
-    verticalAlign: 'middle',
-    wordSpacing: '0px',
+    verticalAlign: "middle",
+    wordSpacing: "0px",
     paddingTop: 50,
     marginBottom: 40,
 
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down("sm")]: {
       fontSize: 28,
     },
   },
   para: {
     color: theme.palette.pbr.textPrimary,
 
-    verticalAlign: 'baseline',
+    verticalAlign: "baseline",
     margin: 0,
     paddingTop: 10,
     paddingBottom: 10,
-    textAlign: 'center',
-    [theme.breakpoints.down('sm')]: {
+    textAlign: "center",
+    [theme.breakpoints.down("sm")]: {
       fontSize: 16,
     },
   },
   icon: {
     fontSize: 48,
-    color: '#616161',
+    color: "#616161",
   },
   title: {
     fontWeight: 600,
-    verticalAlign: 'baseline',
-    letterSpacing: '-0.8px',
+    verticalAlign: "baseline",
+    letterSpacing: "-0.8px",
     margin: 0,
-    textAlign: 'left',
+    textAlign: "left",
     fontSize: 16,
     marginTop: 15,
     marginBottom: 15,
@@ -130,11 +139,11 @@ const useStyles = makeStyles((theme) => ({
     fontSize: 14,
   },
   sliderContainer: {
-    display: 'flex',
-    alignItems: 'center',
+    display: "flex",
+    alignItems: "center",
     marginLeft: 50,
     marginRight: 50,
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down("md")]: {
       marginLeft: 0,
       marginRight: 0,
     },
@@ -147,13 +156,17 @@ const Roadmap = () => {
   const steps = getStepsData();
 
   const [x, setX] = useState(0);
-  const [shift, setShift] = useState(100);
+  const [shift, setShift] = useState(window.innerWidth < 500 ? 300 : 500);
 
   const goRight = () => {
-    x === -shift * ([1, 2, 3, 4, 5, 6, 7, 8, 9].length - 8) ? setX(0) : setX(x - shift);
+    x === -shift * ([1, 2, 3, 4, 5, 6, 7, 8, 9].length - 8)
+      ? setX(0)
+      : setX(x - shift);
   };
   const goLeft = () => {
-    x === shift * ([1, 2, 3, 4, 5, 6, 7, 8, 9].length - 9) ? setX(x + shift) : setX(0);
+    x === shift * ([1, 2, 3, 4, 5, 6, 7, 8, 9].length - 9)
+      ? setX(x + shift)
+      : setX(0);
   };
 
   const goRightMob = () => {
@@ -196,7 +209,7 @@ const Roadmap = () => {
       <div className="row g-0 align-items-center ">
         <div className="col-2 col-md-1">
           <IconButton className="c--right" onClick={handleLeftCarouselScroll}>
-            <ArrowBackIosIcon fontSize="large" style={{ color: '#ffffff' }} />
+            <ArrowBackIosIcon fontSize="large" style={{ color: "#ffffff" }} />
           </IconButton>
         </div>
 
@@ -208,16 +221,25 @@ const Roadmap = () => {
                 className="slide"
                 style={{
                   transform: `translateX(${x}%)`,
-                }}>
-                <div style={{ display: 'flex', flexDirection: 'column' }}>
+                }}
+              >
+                <div style={{ display: "flex", flexDirection: "column" }}>
                   <Avatar src={stepData.icon} variant="rounded" />
-                  <hr style={{ width: '95%', marginTop: 1, marginBottom: 3 }} />
-                  <h3 style={{ color: '#e5e5e5', fontWeight: 700 }}>{stepData.title}</h3>
-                  <h5 style={{ fontSize: 14, color: '#e5e5e5', fontWeight: 600 }}>{stepData.heading}</h5>
-                  <ul style={{ borderLeft: '1px solid grey	' }}>
+                  <hr style={{ width: "95%", marginTop: 1, marginBottom: 3 }} />
+                  <h3 style={{ color: "#e5e5e5", fontWeight: 700 }}>
+                    {stepData.title}
+                  </h3>
+                  <h5
+                    style={{ fontSize: 14, color: "#e5e5e5", fontWeight: 600 }}
+                  >
+                    {stepData.heading}
+                  </h5>
+                  <ul style={{ borderLeft: "1px solid grey	" }}>
                     {stepData.subheadings.map((subheading) => (
-                      <li style={{ marginRight: -5, color: '#e5e5e5' }}>
-                        <p style={{ fontSize: 14, fontWeight: 500 }}>{subheading}</p>
+                      <li style={{ marginRight: -5, color: "#e5e5e5" }}>
+                        <p style={{ fontSize: 14, fontWeight: 500 }}>
+                          {subheading}
+                        </p>
                       </li>
                     ))}
                   </ul>
@@ -228,7 +250,10 @@ const Roadmap = () => {
         </div>
         <div className="col-2 col-md-1">
           <IconButton className="c--right" onClick={handleRightCarouselScroll}>
-            <ArrowForwardIosIcon fontSize="large" style={{ color: '#ffffff' }} />
+            <ArrowForwardIosIcon
+              fontSize="large"
+              style={{ color: "#ffffff" }}
+            />
           </IconButton>
         </div>
       </div>
