@@ -63,9 +63,9 @@ const getStepsData = () => {
     {
       id: "5",
       title: "Q1 - Q2, 2022",
-      heading: "PolkaWar Logictic & Metaverse",
+      heading: "PolkaWar Logistics & Metaverse",
       subheadings: [
-        "PolkaWar Logictics",
+        "PolkaWar Logistics",
         "Multichain Marketplace (Support PolkaDot, Polygon)",
         "Integrate VR and Metaverse",
       ],
