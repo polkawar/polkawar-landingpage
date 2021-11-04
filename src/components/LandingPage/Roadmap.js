@@ -48,6 +48,7 @@ const getStepsData = () => {
       title: 'Q4, 2021',
       heading: 'Mainnet',
       subheadings: [
+        'Tier-1 exchange listing (Kucoin, Huobi, Okex, FTX)',
         '3D Equipment system',
         'PolkaWar Marketplace mainnet',
         'PolkaWar Realm mainnet'
