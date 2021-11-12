@@ -243,6 +243,20 @@ const Investor = () => {
             </a>
           </Card>
         </div>
+        <div className={classes.cardWrapper}>
+          <Card
+            className={classes.card}
+            style={{ backgroundColor: "#212121", border: "1px solid #e5e5e5" }}
+          >
+            <a className={classes.listItem} href="https://www.metis.io/">
+              <img
+                src="assets/metis.png"
+                alt="logo"
+                className={classes.imageWrapper2}
+              />
+            </a>
+          </Card>
+        </div>
       </div>
     </div>
   );
