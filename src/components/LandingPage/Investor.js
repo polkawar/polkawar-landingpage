@@ -91,8 +91,20 @@ const useStyles = makeStyles((theme) => ({
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      height: 80,
+      height: 50,
       width: 100,
+    },
+  },
+  cardCasper: {
+    padding: 5,
+    backgroundColor: "#e5e5e5",
+    borderRadius: 12,
+    [theme.breakpoints.down("md")]: {
+      display: "flex",
+      justifyContent: "center",
+      alignItems: "center",
+      height: 50,
+      width: 140,
     },
   },
   cardWrapper: {
@@ -245,12 +257,27 @@ const Investor = () => {
         </div>
         <div className={classes.cardWrapper}>
           <Card
-            className={classes.card}
+            className={classes.cardCasper}
             style={{ backgroundColor: "#212121", border: "1px solid #e5e5e5" }}
           >
             <a className={classes.listItem} href="https://www.metis.io/">
               <img
                 src="assets/metis.png"
+                alt="logo"
+                className={classes.imageWrapper2}
+              />
+            </a>
+          </Card>
+        </div>
+
+        <div className={classes.cardWrapper}>
+          <Card
+            className={classes.cardCasper}
+            style={{ backgroundColor: "#ffffff", border: "1px solid #e5e5e5" }}
+          >
+            <a className={classes.listItem} href="https://casperlabs.io/">
+              <img
+                src="assets/casper.png"
                 alt="logo"
                 className={classes.imageWrapper2}
               />
