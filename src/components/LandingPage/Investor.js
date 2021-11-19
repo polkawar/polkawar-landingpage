@@ -12,6 +12,7 @@ const useStyles = makeStyles((theme) => ({
     paddingRight: 50,
     paddingTop: 80,
     paddingBottom: 80,
+
     [theme.breakpoints.down("md")]: {
       paddingTop: 10,
       paddingLeft: 10,
@@ -43,12 +44,69 @@ const useStyles = makeStyles((theme) => ({
     paddingBottom: 15,
     textAlign: "center",
   },
+
   imageWrapper: {
     padding: 10,
-    height: "65px",
+    height: "45px",
     [theme.breakpoints.down("md")]: {
-      height: "37px",
-      padding: 12,
+      height: "45px",
+      padding: 15,
+    },
+  },
+  imageWrapperDotOracle: {
+    padding: 2,
+    height: "45px",
+    [theme.breakpoints.down("md")]: {
+      height: "45px",
+      padding: 5,
+    },
+  },
+  imageWrapperMetis: {
+    padding: 2,
+    height: "45px",
+    width: "fit-content",
+    [theme.breakpoints.down("md")]: {
+      padding: 2,
+      height: "30px",
+      width: "100%",
+    },
+  },
+  imageWrapperMeland: {
+    height: "60px",
+
+    [theme.breakpoints.down("md")]: {
+      height: "60px",
+      padding: 5,
+    },
+  },
+  imageWrapperUnifarm: {
+    padding: 10,
+    height: "45px",
+    [theme.breakpoints.down("md")]: {
+      height: "45px",
+      padding: 10,
+    },
+  },
+  imageWrapperKitsumon: {
+    padding: 2,
+    height: "45px",
+    width: "fit-content",
+    [theme.breakpoints.down("md")]: {
+      padding: 2,
+      height: "30px",
+      width: "100%",
+    },
+  },
+  imageWrapperBMW: {
+    padding: 5,
+    height: "45px",
+    paddingLeft: 2,
+    paddingRight: 2,
+    [theme.breakpoints.down("md")]: {
+      height: "45px",
+      padding: 5,
+      paddingLeft: 2,
+      paddingRight: 2,
     },
   },
   imageWrapper2: {
@@ -59,26 +117,7 @@ const useStyles = makeStyles((theme) => ({
       padding: 4,
     },
   },
-  imageWrapperBMW: {
-    padding: 10,
-    height: "70px",
-    [theme.breakpoints.down("md")]: {
-      height: "58px",
-      padding: 10,
-      paddingLeft: 2,
-      paddingRight: 2,
-    },
-  },
-  listingsWrapper: {
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-    flexWrap: "wrap",
-    padding: 10,
-    [theme.breakpoints.down("md")]: {
-      padding: 5,
-    },
-  },
+
   listItem: {
     alignSelf: "center",
     justifySelf: "center",
@@ -87,6 +126,7 @@ const useStyles = makeStyles((theme) => ({
     padding: 5,
     backgroundColor: "#e5e5e5",
     borderRadius: 12,
+    width: "fit-content",
     [theme.breakpoints.down("md")]: {
       display: "flex",
       justifyContent: "center",
@@ -110,6 +150,19 @@ const useStyles = makeStyles((theme) => ({
   cardWrapper: {
     padding: 5,
   },
+  logoContainer: {
+    borderRadius: 14,
+    paddingTop: 20,
+    paddingBottom: 20,
+    display: "flex",
+    justifyContent: "center",
+  },
+  logoWrapper: {
+    width: 850,
+    [theme.breakpoints.down("md")]: {
+      width: "100%",
+    },
+  },
 }));
 
 const Investor = () => {
@@ -120,169 +173,224 @@ const Investor = () => {
       <h6 className={classes.heading}>
         Investors and Partners<strong className={classes.highlight}></strong>
       </h6>
-      <div className={classes.listingsWrapper}>
-        <div className={classes.cardWrapper}>
-          <Card className={classes.card}>
-            <a className={classes.listItem} href="https://polkabridge.org/">
-              <img
-                src="assets/polkabridge.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </Card>
-        </div>
-        <div className={classes.cardWrapper}>
-          <Card className={classes.card}>
-            <a className={classes.listItem} href="http://chinapolka.com/">
-              <img
-                src="assets/chinapolka.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </Card>
-        </div>
-        <div className={classes.cardWrapper}>
-          <Card className={classes.card}>
-            <a className={classes.listItem}>
-              <img
-                src="assets/bmwcapital.png"
-                alt="logo"
-                className={classes.imageWrapperBMW}
-              />
-            </a>
-          </Card>
-        </div>
-      </div>
-      <div className={classes.listingsWrapper}>
-        <div className={classes.cardWrapper}>
-          <Card className={classes.card}>
-            <a className={classes.listItem} href="https://quiverx.io/">
-              <img
-                src="assets/quiverx.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </Card>
-        </div>
+      <div className={classes.logoContainer}>
+        <div className={classes.logoWrapper}>
+          <div className="row justify-content-center">
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card}>
+                <a className={classes.listItem} href="https://polkabridge.org/">
+                  <img
+                    src="assets/polkabridge.png"
+                    alt="logo"
+                    className={classes.imageWrapper}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card}>
+                <a className={classes.listItem} href="http://chinapolka.com/">
+                  <img
+                    src="assets/chinapolka.png"
+                    alt="logo"
+                    className={classes.imageWrapper}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card}>
+                <a className={classes.listItem}>
+                  <img
+                    src="assets/bmwcapital.png"
+                    alt="logo"
+                    className={classes.imageWrapperBMW}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card}>
+                <a className={classes.listItem} href="https://quiverx.io/">
+                  <img
+                    src="assets/quiverx.png"
+                    alt="logo"
+                    className={classes.imageWrapper}
+                  />
+                </a>
+              </Card>
+            </div>
+          </div>
+          <div className="row justify-content-center">
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card
+                className={classes.card}
+                style={{
+                  backgroundColor: "#000000",
+                  border: "1px solid #ffffff",
+                }}
+              >
+                <a
+                  className={classes.listItem}
+                  href="https://oddiyana.ventures"
+                >
+                  <img
+                    src="assets/oddinaya.png"
+                    alt="logo"
+                    className={classes.imageWrapper}
+                    style={{ padding: 0 }}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card} href="https://yellowroad.app/">
+                <a className={classes.listItem}>
+                  <img
+                    src="assets/yellow.png"
+                    alt="logo"
+                    className={classes.imageWrapper}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card}>
+                <a
+                  className={classes.listItem}
+                  href="https://www.daostarter.pro"
+                >
+                  <img
+                    src="assets/daostater.png"
+                    alt="logo"
+                    className={classes.imageWrapper}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card}>
+                <a className={classes.listItem} href="https://duckstarter.io">
+                  <img
+                    src="assets/DuckStarter.svg"
+                    alt="logo"
+                    className={classes.imageWrapper}
+                  />
+                </a>
+              </Card>
+            </div>
+          </div>
 
-        <div className={classes.cardWrapper}>
-          <Card
-            className={classes.card}
-            style={{ backgroundColor: "#000000", border: "1px solid #ffffff" }}
-          >
-            <a className={classes.listItem} href="https://oddiyana.ventures">
-              <img
-                src="assets/oddinaya.png"
-                alt="logo"
-                className={classes.imageWrapper}
-                style={{ padding: 0 }}
-              />
-            </a>
-          </Card>
-        </div>
-        <div className={classes.cardWrapper}>
-          <Card className={classes.card} href="https://yellowroad.app/">
-            <a className={classes.listItem}>
-              <img
-                src="assets/yellow.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </Card>
-        </div>
-      </div>
-      <div className={classes.listingsWrapper}>
-        <div className={classes.cardWrapper}>
-          <Card className={classes.card}>
-            <a className={classes.listItem} href="https://www.daostarter.pro">
-              <img
-                src="assets/daostater.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </Card>
-        </div>
+          <div className="row justify-content-center">
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card
+                className={classes.card}
+                style={{ backgroundColor: "#E93A64" }}
+              >
+                <a className={classes.listItem} href="https://unifarm.co/">
+                  <img
+                    src="assets/unifarm.png"
+                    alt="logo"
+                    className={classes.imageWrapperUnifarm}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card}>
+                <a
+                  className={classes.listItem}
+                  href="https://dotoracle.network/"
+                >
+                  <img
+                    src="assets/dotoracle.png"
+                    alt="logo"
+                    className={classes.imageWrapperDotOracle}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card}>
+                <a className={classes.listItem} href="https://roseon.finance/">
+                  <img
+                    src="assets/roseon.png"
+                    alt="logo"
+                    className={classes.imageWrapperDotOracle}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card
+                className={classes.card}
+                style={{
+                  backgroundColor: "#212121",
+                  border: "1px solid #e5e5e5",
+                }}
+              >
+                <a className={classes.listItem} href="https://www.metis.io/">
+                  <img
+                    src="assets/metis.png"
+                    alt="logo"
+                    className={classes.imageWrapperMetis}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card
+                className={classes.card}
+                style={{
+                  backgroundColor: "#ffffff",
+                  border: "1px solid #e5e5e5",
+                }}
+              >
+                <a className={classes.listItem} href="https://casperlabs.io/">
+                  <img
+                    src="assets/casper.png"
+                    alt="logo"
+                    className={classes.imageWrapper}
+                  />
+                </a>
+              </Card>
+            </div>
 
-        <div className={classes.cardWrapper}>
-          <Card className={classes.card}>
-            <a className={classes.listItem} href="https://duckstarter.io">
-              <img
-                src="assets/DuckStarter.svg"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </Card>
-        </div>
-        <div className={classes.cardWrapper}>
-          <Card className={classes.card}>
-            <a className={classes.listItem} href="https://unifarm.co/">
-              <img
-                src="assets/unifarm.png"
-                alt="logo"
-                className={classes.imageWrapper}
-              />
-            </a>
-          </Card>
-        </div>
-      </div>
-      <div className={classes.listingsWrapper}>
-        <div className={classes.cardWrapper}>
-          <Card className={classes.card}>
-            <a className={classes.listItem} href="https://dotoracle.network/">
-              <img
-                src="assets/dotoracle.png"
-                alt="logo"
-                className={classes.imageWrapper2}
-              />
-            </a>
-          </Card>
-        </div>
-
-        <div className={classes.cardWrapper}>
-          <Card className={classes.card}>
-            <a className={classes.listItem} href="https://roseon.finance/">
-              <img
-                src="assets/roseon.png"
-                alt="logo"
-                className={classes.imageWrapper2}
-              />
-            </a>
-          </Card>
-        </div>
-        <div className={classes.cardWrapper}>
-          <Card
-            className={classes.cardCasper}
-            style={{ backgroundColor: "#212121", border: "1px solid #e5e5e5" }}
-          >
-            <a className={classes.listItem} href="https://www.metis.io/">
-              <img
-                src="assets/metis.png"
-                alt="logo"
-                className={classes.imageWrapper2}
-              />
-            </a>
-          </Card>
-        </div>
-
-        <div className={classes.cardWrapper}>
-          <Card
-            className={classes.cardCasper}
-            style={{ backgroundColor: "#ffffff", border: "1px solid #e5e5e5" }}
-          >
-            <a className={classes.listItem} href="https://casperlabs.io/">
-              <img
-                src="assets/casper.png"
-                alt="logo"
-                className={classes.imageWrapper2}
-              />
-            </a>
-          </Card>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card}>
+                <a className={classes.listItem}>
+                  <img
+                    src="assets/meland.png"
+                    alt="logo"
+                    className={classes.imageWrapperMeland}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card}>
+                <a className={classes.listItem}>
+                  <img
+                    src="assets/kitsumon.png"
+                    alt="logo"
+                    style={{ padding: 5 }}
+                    className={classes.imageWrapperKitsumon}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card}>
+                <a className={classes.listItem}>
+                  <img
+                    src="assets/Doragonland.png"
+                    alt="logo"
+                    className={classes.imageWrapperMeland}
+                  />
+                </a>
+              </Card>
+            </div>
+          </div>
         </div>
       </div>
     </div>
