@@ -89,11 +89,21 @@ const useStyles = makeStyles((theme) => ({
   },
   imageWrapperKitsumon: {
     padding: 2,
-    height: "45px",
+    height: "55px",
     width: "fit-content",
     [theme.breakpoints.down("md")]: {
       padding: 2,
       height: "30px",
+      width: "100%",
+    },
+  },
+  imageWizarre: {
+    padding: 5,
+    height: "55px",
+    width: "fit-content",
+    [theme.breakpoints.down("md")]: {
+      padding: 2,
+      height: "35px",
       width: "100%",
     },
   },
@@ -338,7 +348,7 @@ const Investor = () => {
                 </a>
               </Card>
             </div>
-            <div className="col-6 col-md-3 mb-4" align="center">
+            <div className="col-6 col-md-2 mb-4" align="center">
               <Card
                 className={classes.card}
                 style={{
@@ -356,9 +366,9 @@ const Investor = () => {
               </Card>
             </div>
 
-            <div className="col-6 col-md-3 mb-4" align="center">
+            <div className="col-6 col-md-2 mb-4" align="center">
               <Card className={classes.card}>
-                <a className={classes.listItem}>
+                <a className={classes.listItem} href="https://www.meland.ai/">
                   <img
                     src="assets/meland.png"
                     alt="logo"
@@ -369,7 +379,7 @@ const Investor = () => {
             </div>
             <div className="col-6 col-md-3 mb-4" align="center">
               <Card className={classes.card}>
-                <a className={classes.listItem}>
+                <a className={classes.listItem} href="https://kitsumon.com/">
                   <img
                     src="assets/kitsumon.png"
                     alt="logo"
@@ -379,13 +389,27 @@ const Investor = () => {
                 </a>
               </Card>
             </div>
-            <div className="col-6 col-md-3 mb-4" align="center">
+            <div className="col-6 col-md-2 mb-4" align="center">
               <Card className={classes.card}>
-                <a className={classes.listItem}>
+                <a
+                  className={classes.listItem}
+                  href="https://www.dragonlandgame.com/"
+                >
                   <img
                     src="assets/Doragonland.png"
                     alt="logo"
                     className={classes.imageWrapperMeland}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-2 mb-4" align="center">
+              <Card className={classes.card}>
+                <a className={classes.listItem} href="https://wizarre.io/">
+                  <img
+                    src="assets/wizarre.png"
+                    alt="logo"
+                    className={classes.imageWizarre}
                   />
                 </a>
               </Card>
