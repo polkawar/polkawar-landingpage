@@ -414,6 +414,28 @@ const Investor = () => {
                 </a>
               </Card>
             </div>
+            <div className="col-6 col-md-2 mb-4" align="center">
+              <Card className={classes.card}>
+                <a className={classes.listItem} href="https://souni.io/">
+                  <img
+                    src="assets/souni.png"
+                    alt="logo"
+                    className={classes.imageWizarre}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-2 mb-4" align="center">
+              <Card className={classes.card}>
+                <a className={classes.listItem} href="https://www.dogeon.io/">
+                  <img
+                    src="assets/dogeon.png"
+                    alt="dogeon"
+                    className={classes.imageWizarre}
+                  />
+                </a>
+              </Card>
+            </div>
           </div>
         </div>
       </div>
