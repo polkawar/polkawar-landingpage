@@ -67,10 +67,36 @@ const getStepsData = () => {
       subheadings: [
         "MoveToEarn: Hit, Run And Earn",
         "Launch Game Mainnet",
-        "Tier-1 exchange listing (Kucoin, Huobi, Okex, FTX)",
+        "Tier-1 exchanges listing (Kucoin, Huobi, Okex)",
         "PolkaWar Logistics: Deployed in Asia region",
         "Marketplace Mainnet",
         "Integrate VR and Metaverse",
+      ],
+      completed: false,
+      icon: chain,
+    },
+    {
+      id: "6",
+      title: "Q4, 2022",
+      heading: "Multichain GameFi and Metaverse",
+      subheadings: [
+        "Top exchanges listing (Binance)",
+        "Deploying Metaverse for Gamers",
+        "Deploying PolkaWar Logictics to Europe and America region",
+        "Multichain Marketplace",
+        "Integrate PolkaDot into the Game Characters"
+      ],
+      completed: false,
+      icon: chain,
+    },
+    {
+      id: "7",
+      title: "2023",
+      heading: "Adventure Game",
+      subheadings: [
+        "Release the game in Adventure mode",
+        "Focus on developing multi-chain games",
+        "Integration with other gamefi projects"
       ],
       completed: false,
       icon: chain,
