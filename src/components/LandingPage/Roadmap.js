@@ -84,7 +84,7 @@ const getStepsData = () => {
         "Deploying Metaverse for Gamers",
         "Deploying PolkaWar Logictics to Europe and America region",
         "Multichain Marketplace",
-        "Integrate PolkaDot into the Game Characters"
+        "Integrate PolkaDot into the Game Characters",
       ],
       completed: false,
       icon: chain,
@@ -96,7 +96,7 @@ const getStepsData = () => {
       subheadings: [
         "Release the game in Adventure mode",
         "Focus on developing multi-chain games",
-        "Integration with other gamefi projects"
+        "Integration with other gamefi projects",
       ],
       completed: false,
       icon: chain,
@@ -179,7 +179,7 @@ const Roadmap = () => {
   const steps = getStepsData();
 
   const [x, setX] = useState(0);
-  const [shift, setShift] = useState(window.innerWidth < 500 ? 300 : 500);
+  const [shift, setShift] = useState(window.innerWidth < 500 ? 400 : 400);
 
   const goRight = () => {
     x === -shift * ([1, 2, 3, 4, 5, 6, 7, 8, 9].length - 8)
