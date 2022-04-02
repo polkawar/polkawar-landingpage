@@ -427,7 +427,7 @@ const Investor = () => {
             </div>
             <div className="col-6 col-md-2 mb-4" align="center">
               <Card className={classes.card}>
-                <a className={classes.listItem} href="https://www.dogeon.io/">
+                <a className={classes.listItem} href="https://arcadenet.io/">
                   <img
                     src="assets/arcade.png"
                     alt="arcade"
