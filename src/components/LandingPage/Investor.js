@@ -425,12 +425,26 @@ const Investor = () => {
                 </a>
               </Card>
             </div>
-            <div className="col-6 col-md-2 mb-4" align="center">
+            <div className="col-6 col-md-3 mb-4" align="center">
               <Card className={classes.card}>
                 <a className={classes.listItem} href="https://arcadenet.io/">
                   <img
                     src="assets/arcade.png"
                     alt="arcade"
+                    className={classes.imageWizarre}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card}>
+                <a
+                  className={classes.listItem}
+                  href="https://metachess.network/"
+                >
+                  <img
+                    src="/assets/metachess.png"
+                    alt="metachess"
                     className={classes.imageWizarre}
                   />
                 </a>
