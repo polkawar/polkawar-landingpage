@@ -173,6 +173,28 @@ const useStyles = makeStyles((theme) => ({
       width: "100%",
     },
   },
+  noBgIconLong: {
+    backgroundColor: "transparent",
+
+    height: "40px",
+    width: "fit-content",
+    [theme.breakpoints.down("md")]: {
+      padding: 2,
+      height: "30px",
+      width: "100%",
+    },
+  },
+  noBgIcon: {
+    backgroundColor: "transparent",
+
+    height: "60px",
+    width: "fit-content",
+    [theme.breakpoints.down("md")]: {
+      padding: 2,
+      height: "50px",
+      width: "100%",
+    },
+  },
 }));
 
 const Investor = () => {
@@ -414,17 +436,7 @@ const Investor = () => {
                 </a>
               </Card>
             </div>
-            <div className="col-6 col-md-2 mb-4" align="center">
-              <Card className={classes.card}>
-                <a className={classes.listItem} href="https://souni.io/">
-                  <img
-                    src="assets/souni.png"
-                    alt="logo"
-                    className={classes.imageWizarre}
-                  />
-                </a>
-              </Card>
-            </div>
+
             <div className="col-6 col-md-3 mb-4" align="center">
               <Card className={classes.card}>
                 <a className={classes.listItem} href="https://arcadenet.io/">
@@ -450,6 +462,38 @@ const Investor = () => {
                 </a>
               </Card>
             </div>
+
+            <div
+              className="col-6 col-md-3 mb-4 d-flex justify-content-center  align-items-center"
+              align="center"
+            >
+              <Card
+                className={classes.card}
+                style={{ backgroundColor: "#ffffff" }}
+              >
+                <a className={classes.listItem} href="https://www.fabwelt.com/">
+                  <img
+                    src="assets/fabwelt.png"
+                    alt="dogeon"
+                    className={classes.noBgIconLong}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div
+              className="col-6 col-md-3 mb-4 d-flex justify-content-center align-items-center"
+              align="center"
+            >
+              <Card className={classes.card}>
+                <a className={classes.listItem} href="https://gamesol.io/">
+                  <img
+                    src="assets/gamesol.gif"
+                    alt="dogeon"
+                    className={classes.noBgIconLong}
+                  />
+                </a>
+              </Card>
+            </div>
             <div className="col-6 col-md-2 mb-4" align="center">
               <Card className={classes.card}>
                 <a className={classes.listItem} href="https://www.dogeon.io/">
@@ -457,6 +501,63 @@ const Investor = () => {
                     src="assets/dogeon.png"
                     alt="dogeon"
                     className={classes.imageWizarre}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <Card className={classes.card}>
+                <a className={classes.listItem} href="https://souni.io/">
+                  <img
+                    src="assets/souni.png"
+                    alt="logo"
+                    className={classes.imageWizarre}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-2 mb-4" align="center">
+              <Card
+                className={classes.card}
+                style={{ backgroundColor: "#000000" }}
+              >
+                <a className={classes.listItem} href="https://blockombat.com/">
+                  <img
+                    src="assets/BlocKombat.jpeg"
+                    alt="BlocKombat"
+                    className={classes.noBgIcon}
+                  />
+                </a>
+              </Card>
+            </div>
+
+            <div className="col-6 col-md-2 mb-4" align="center">
+              <Card
+                className={classes.card}
+                style={{ backgroundColor: "transparent", borderRadius: "50%" }}
+              >
+                <a
+                  className={classes.listItem}
+                  href="https://conquestlegends.com/"
+                >
+                  <img
+                    src="assets/conquest.jpeg"
+                    alt="dogeon"
+                    className={classes.noBgIcon}
+                  />
+                </a>
+              </Card>
+            </div>
+            <div className="col-6 col-md-2 mb-4" align="center">
+              <Card
+                className={classes.card}
+                style={{ backgroundColor: "transparent", borderRadius: "50%" }}
+              >
+                <a className={classes.listItem} href="https://rikkei.finance/">
+                  <img
+                    src="assets/rigi.png"
+                    alt="dogeon"
+                    className={classes.noBgIcon}
                   />
                 </a>
               </Card>
