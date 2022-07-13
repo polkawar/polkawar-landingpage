@@ -68,11 +68,12 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("md")]: {
       padding: 2,
       height: "30px",
-      width: "100%",
+      width: "fit-content",
+      maxWidth: 70,
     },
   },
   imageWrapperMeland: {
-    height: "60px",
+    height: "70px",
 
     [theme.breakpoints.down("md")]: {
       height: "60px",
@@ -81,7 +82,7 @@ const useStyles = makeStyles((theme) => ({
   },
   imageWrapperUnifarm: {
     padding: 10,
-    height: "45px",
+    height: "50px",
     [theme.breakpoints.down("md")]: {
       height: "45px",
       padding: 10,
@@ -103,15 +104,13 @@ const useStyles = makeStyles((theme) => ({
     width: "fit-content",
     [theme.breakpoints.down("md")]: {
       padding: 2,
-      height: "35px",
-      width: "100%",
+      height: "40px",
+      width: "fit-content",
+      maxWidth: 70,
     },
   },
   imageWrapperBMW: {
-    padding: 5,
-    height: "45px",
-    paddingLeft: 2,
-    paddingRight: 2,
+    height: "48px",
     [theme.breakpoints.down("md")]: {
       height: "45px",
       padding: 5,
@@ -168,22 +167,13 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "center",
   },
   logoWrapper: {
-    width: 850,
+    maxWidth: 900,
+    width: "100%",
     [theme.breakpoints.down("md")]: {
       width: "100%",
     },
   },
-  noBgIconLong: {
-    backgroundColor: "transparent",
 
-    height: "40px",
-    width: "fit-content",
-    [theme.breakpoints.down("md")]: {
-      padding: 2,
-      height: "30px",
-      width: "100%",
-    },
-  },
   noBgIcon: {
     backgroundColor: "transparent",
 
@@ -192,7 +182,8 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("md")]: {
       padding: 2,
       height: "50px",
-      width: "100%",
+      width: "fit-content",
+      maxWidth: 70,
     },
   },
 }));
@@ -209,18 +200,18 @@ const Investor = () => {
         <div className={classes.logoWrapper}>
           <div className="row justify-content-center">
             <div className="col-6 col-md-3 mb-4" align="center">
-              <Card className={classes.card}>
+              <div>
                 <a className={classes.listItem} href="https://polkabridge.org/">
                   <img
-                    src="assets/polkabridge.png"
+                    src="https://launchpad.polkabridge.org/img/logo-white.png"
                     alt="logo"
                     className={classes.imageWrapper}
                   />
                 </a>
-              </Card>
+              </div>
             </div>
             <div className="col-6 col-md-3 mb-4" align="center">
-              <Card className={classes.card}>
+              <div>
                 <a className={classes.listItem} href="http://chinapolka.com/">
                   <img
                     src="assets/chinapolka.png"
@@ -228,10 +219,10 @@ const Investor = () => {
                     className={classes.imageWrapper}
                   />
                 </a>
-              </Card>
+              </div>
             </div>
             <div className="col-6 col-md-3 mb-4" align="center">
-              <Card className={classes.card}>
+              <div>
                 <a className={classes.listItem}>
                   <img
                     src="assets/bmwcapital.png"
@@ -239,145 +230,22 @@ const Investor = () => {
                     className={classes.imageWrapperBMW}
                   />
                 </a>
-              </Card>
+              </div>
             </div>
             <div className="col-6 col-md-3 mb-4" align="center">
-              <Card className={classes.card}>
-                <a className={classes.listItem} href="https://quiverx.io/">
+              <div>
+                <a className={classes.listItem} href="https://arcadenet.io/">
                   <img
-                    src="assets/quiverx.png"
-                    alt="logo"
-                    className={classes.imageWrapper}
+                    src="assets/arcade.png"
+                    alt="arcade"
+                    className={classes.imageWizarre}
                   />
                 </a>
-              </Card>
+              </div>
             </div>
-          </div>
-          <div className="row justify-content-center">
-            <div className="col-6 col-md-3 mb-4" align="center">
-              <Card
-                className={classes.card}
-                style={{
-                  backgroundColor: "#000000",
-                  border: "1px solid #ffffff",
-                }}
-              >
-                <a
-                  className={classes.listItem}
-                  href="https://oddiyana.ventures"
-                >
-                  <img
-                    src="assets/oddinaya.png"
-                    alt="logo"
-                    className={classes.imageWrapper}
-                    style={{ padding: 0 }}
-                  />
-                </a>
-              </Card>
-            </div>
-            <div className="col-6 col-md-3 mb-4" align="center">
-              <Card className={classes.card} href="https://yellowroad.app/">
-                <a className={classes.listItem}>
-                  <img
-                    src="assets/yellow.png"
-                    alt="logo"
-                    className={classes.imageWrapper}
-                  />
-                </a>
-              </Card>
-            </div>
-            <div className="col-6 col-md-3 mb-4" align="center">
-              <Card className={classes.card}>
-                <a
-                  className={classes.listItem}
-                  href="https://www.daostarter.pro"
-                >
-                  <img
-                    src="assets/daostater.png"
-                    alt="logo"
-                    className={classes.imageWrapper}
-                  />
-                </a>
-              </Card>
-            </div>
-            <div className="col-6 col-md-3 mb-4" align="center">
-              <Card className={classes.card}>
-                <a className={classes.listItem} href="https://duckstarter.io">
-                  <img
-                    src="assets/DuckStarter.svg"
-                    alt="logo"
-                    className={classes.imageWrapper}
-                  />
-                </a>
-              </Card>
-            </div>
-          </div>
 
-          <div className="row justify-content-center">
             <div className="col-6 col-md-3 mb-4" align="center">
-              <Card
-                className={classes.card}
-                style={{ backgroundColor: "#E93A64" }}
-              >
-                <a className={classes.listItem} href="https://unifarm.co/">
-                  <img
-                    src="assets/unifarm.png"
-                    alt="logo"
-                    className={classes.imageWrapperUnifarm}
-                  />
-                </a>
-              </Card>
-            </div>
-            <div className="col-6 col-md-3 mb-4" align="center">
-              <Card className={classes.card}>
-                <a
-                  className={classes.listItem}
-                  href="https://dotoracle.network/"
-                >
-                  <img
-                    src="assets/dotoracle.png"
-                    alt="logo"
-                    className={classes.imageWrapperDotOracle}
-                  />
-                </a>
-              </Card>
-            </div>
-            <div className="col-6 col-md-3 mb-4" align="center">
-              <Card className={classes.card}>
-                <a className={classes.listItem} href="https://roseon.finance/">
-                  <img
-                    src="assets/roseon.png"
-                    alt="logo"
-                    className={classes.imageWrapperDotOracle}
-                  />
-                </a>
-              </Card>
-            </div>
-            <div className="col-6 col-md-3 mb-4" align="center">
-              <Card
-                className={classes.card}
-                style={{
-                  backgroundColor: "#212121",
-                  border: "1px solid #e5e5e5",
-                }}
-              >
-                <a className={classes.listItem} href="https://www.metis.io/">
-                  <img
-                    src="assets/metis.png"
-                    alt="logo"
-                    className={classes.imageWrapperMetis}
-                  />
-                </a>
-              </Card>
-            </div>
-            <div className="col-6 col-md-2 mb-4" align="center">
-              <Card
-                className={classes.card}
-                style={{
-                  backgroundColor: "#ffffff",
-                  border: "1px solid #e5e5e5",
-                }}
-              >
+              <div>
                 <a className={classes.listItem} href="https://casperlabs.io/">
                   <img
                     src="assets/casper.png"
@@ -385,34 +253,49 @@ const Investor = () => {
                     className={classes.imageWrapper}
                   />
                 </a>
-              </Card>
-            </div>
-
-            <div className="col-6 col-md-2 mb-4" align="center">
-              <Card className={classes.card}>
-                <a className={classes.listItem} href="https://www.meland.ai/">
-                  <img
-                    src="assets/meland.png"
-                    alt="logo"
-                    className={classes.imageWrapperMeland}
-                  />
-                </a>
-              </Card>
+              </div>
             </div>
             <div className="col-6 col-md-3 mb-4" align="center">
-              <Card className={classes.card}>
-                <a className={classes.listItem} href="https://kitsumon.com/">
+              <div>
+                <a className={classes.listItem} href="https://www.metis.io/">
                   <img
-                    src="assets/kitsumon.png"
+                    src="assets/metis.png"
                     alt="logo"
-                    style={{ padding: 5 }}
-                    className={classes.imageWrapperKitsumon}
+                    className={classes.imageWrapperUnifarm}
                   />
                 </a>
-              </Card>
+              </div>
             </div>
-            <div className="col-6 col-md-2 mb-4" align="center">
-              <Card className={classes.card}>
+            <div
+              className="col-6 col-md-3 mb-4 d-flex justify-content-center  align-items-center"
+              align="center"
+            >
+              <div>
+                <a className={classes.listItem} href="https://www.fabwelt.com/">
+                  <img
+                    src="assets/fabwelt.webp"
+                    alt="dogeon"
+                    className={classes.imageWrapperUnifarm}
+                  />
+                </a>
+              </div>
+            </div>
+            <div
+              className="col-6 col-md-3 mb-4 d-flex justify-content-center align-items-center"
+              align="center"
+            >
+              <div>
+                <a className={classes.listItem} href="https://gamesol.io/">
+                  <img
+                    src="assets/gamesol.gif"
+                    alt="dogeon"
+                    className={classes.imageWrapperUnifarm}
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
                 <a
                   className={classes.listItem}
                   href="https://www.dragonlandgame.com/"
@@ -423,33 +306,21 @@ const Investor = () => {
                     className={classes.imageWrapperMeland}
                   />
                 </a>
-              </Card>
+              </div>
             </div>
-            <div className="col-6 col-md-2 mb-4" align="center">
-              <Card className={classes.card}>
-                <a className={classes.listItem} href="https://wizarre.io/">
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
+                <a className={classes.listItem} href="https://www.meland.ai/">
                   <img
-                    src="assets/wizarre.png"
+                    src="assets/meland.png"
                     alt="logo"
-                    className={classes.imageWizarre}
+                    className={classes.imageWrapperMeland}
                   />
                 </a>
-              </Card>
-            </div>
-
-            <div className="col-6 col-md-3 mb-4" align="center">
-              <Card className={classes.card}>
-                <a className={classes.listItem} href="https://arcadenet.io/">
-                  <img
-                    src="assets/arcade.png"
-                    alt="arcade"
-                    className={classes.imageWizarre}
-                  />
-                </a>
-              </Card>
+              </div>
             </div>
             <div className="col-6 col-md-3 mb-4" align="center">
-              <Card className={classes.card}>
+              <div>
                 <a
                   className={classes.listItem}
                   href="https://metachess.network/"
@@ -460,42 +331,10 @@ const Investor = () => {
                     className={classes.imageWizarre}
                   />
                 </a>
-              </Card>
+              </div>
             </div>
-
-            <div
-              className="col-6 col-md-3 mb-4 d-flex justify-content-center  align-items-center"
-              align="center"
-            >
-              <Card
-                className={classes.card}
-                style={{ backgroundColor: "#ffffff" }}
-              >
-                <a className={classes.listItem} href="https://www.fabwelt.com/">
-                  <img
-                    src="assets/fabwelt.png"
-                    alt="dogeon"
-                    className={classes.noBgIconLong}
-                  />
-                </a>
-              </Card>
-            </div>
-            <div
-              className="col-6 col-md-3 mb-4 d-flex justify-content-center align-items-center"
-              align="center"
-            >
-              <Card className={classes.card}>
-                <a className={classes.listItem} href="https://gamesol.io/">
-                  <img
-                    src="assets/gamesol.gif"
-                    alt="dogeon"
-                    className={classes.noBgIconLong}
-                  />
-                </a>
-              </Card>
-            </div>
-            <div className="col-6 col-md-2 mb-4" align="center">
-              <Card className={classes.card}>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
                 <a className={classes.listItem} href="https://www.dogeon.io/">
                   <img
                     src="assets/dogeon.png"
@@ -503,37 +342,89 @@ const Investor = () => {
                     className={classes.imageWizarre}
                   />
                 </a>
-              </Card>
+              </div>
             </div>
+
             <div className="col-6 col-md-3 mb-4" align="center">
-              <Card className={classes.card}>
+              <div>
+                <a className={classes.listItem} href="https://wizarre.io/">
+                  <img
+                    src="assets/wizarre.png"
+                    alt="logo"
+                    className={classes.imageWrapperMetis}
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
                 <a className={classes.listItem} href="https://souni.io/">
                   <img
                     src="assets/souni.png"
                     alt="logo"
+                    style={{ padding: 0 }}
                     className={classes.imageWizarre}
                   />
                 </a>
-              </Card>
+              </div>
             </div>
-            <div className="col-6 col-md-2 mb-4" align="center">
-              <Card
-                className={classes.card}
-                style={{ backgroundColor: "#000000" }}
-              >
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
+                <a className={classes.listItem} href="https://kitsumon.com/">
+                  <img
+                    src="assets/kitsumon.png"
+                    alt="logo"
+                    style={{ padding: 7 }}
+                    className={classes.imageWrapperMetis}
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
+                <a className={classes.listItem} href="https://unifarm.co/">
+                  <img
+                    src="assets/unifarm.png"
+                    alt="logo"
+                    className={classes.imageWrapperUnifarm}
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
                 <a className={classes.listItem} href="https://blockombat.com/">
                   <img
                     src="assets/BlocKombat.jpeg"
                     alt="BlocKombat"
+                    style={{
+                      backgroundColor: "transparent",
+                      borderRadius: "50%",
+                    }}
                     className={classes.noBgIcon}
                   />
                 </a>
-              </Card>
+              </div>
             </div>
 
-            <div className="col-6 col-md-2 mb-4" align="center">
-              <Card
-                className={classes.card}
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
+                <a className={classes.listItem} href="https://rikkei.finance/">
+                  <img
+                    src="assets/rigi.png"
+                    alt="dogeon"
+                    style={{
+                      backgroundColor: "transparent",
+                      borderRadius: "50%",
+                    }}
+                    className={classes.noBgIcon}
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div
                 style={{ backgroundColor: "transparent", borderRadius: "50%" }}
               >
                 <a
@@ -543,24 +434,105 @@ const Investor = () => {
                   <img
                     src="assets/conquest.jpeg"
                     alt="dogeon"
+                    style={{
+                      backgroundColor: "transparent",
+                      borderRadius: "50%",
+                    }}
                     className={classes.noBgIcon}
                   />
                 </a>
-              </Card>
+              </div>
             </div>
-            <div className="col-6 col-md-2 mb-4" align="center">
-              <Card
-                className={classes.card}
-                style={{ backgroundColor: "transparent", borderRadius: "50%" }}
-              >
-                <a className={classes.listItem} href="https://rikkei.finance/">
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
+                <a className={classes.listItem} href="https://roseon.finance/">
                   <img
-                    src="assets/rigi.png"
-                    alt="dogeon"
-                    className={classes.noBgIcon}
+                    src="assets/roseon.png"
+                    alt="logo"
+                    className={classes.imageWrapperDotOracle}
                   />
                 </a>
-              </Card>
+              </div>
+            </div>
+
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div href="https://yellowroad.app/">
+                <a className={classes.listItem}>
+                  <img
+                    src="https://yellow-road.web.app/static/media/mobile-logo.dc85cbf8.svg"
+                    alt="logo"
+                    className={classes.imageWrapper}
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
+                <a
+                  className={classes.listItem}
+                  href="https://www.daostarter.pro"
+                >
+                  <img
+                    src="assets/daostarter.png"
+                    alt="logo"
+                    className={classes.imageWrapperMetis}
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
+                <a className={classes.listItem} href="https://duckstarter.io">
+                  <img
+                    src="assets/DuckStarter.svg"
+                    alt="logo"
+                    className={classes.imageWrapper}
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
+                <a
+                  className={classes.listItem}
+                  href="https://dotoracle.network/"
+                >
+                  <img
+                    src="assets/dotoracle.png"
+                    alt="logo"
+                    className={classes.imageWrapperDotOracle}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="row justify-content-center">
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
+                <a className={classes.listItem} href="https://quiverx.io/">
+                  <img
+                    src="https://assets.website-files.com/61e184149387a6f17febbb02/622cdc8ffdfd913a4470205a_logo.svg"
+                    alt="logo"
+                    className={classes.imageWrapperDotOracle}
+                  />
+                </a>
+              </div>
+            </div>
+            <div className="col-6 col-md-3 mb-4" align="center">
+              <div>
+                <a
+                  className={classes.listItem}
+                  href="https://oddiyana.ventures"
+                >
+                  <img
+                    src="assets/oddiyana.png"
+                    alt="logo"
+                    className={classes.imageWrapperUnifarm}
+                    style={{ padding: 0 }}
+                  />
+                </a>
+              </div>
             </div>
           </div>
         </div>
